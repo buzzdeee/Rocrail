@@ -59,7 +59,7 @@ TrackPickerDlg::TrackPickerDlg( wxWindow* parent ):TrackPickerDlgGen( parent )
   m_GridTrack->EnableDragGridSize(false);
   m_GridTrack->ClearGrid();
   m_GridTrack->DeleteRows( 0, m_GridTrack->GetNumberRows() );
-  m_GridTrack->SetCellTextColour(*wxWHITE);
+  m_GridTrack->SetDefaultCellTextColour(*wxWHITE);
 
   int itemidps = 7;
   int textps =  m_GridTrack->GetDefaultCellFont().GetPointSize();
@@ -70,37 +70,37 @@ TrackPickerDlg::TrackPickerDlg( wxWindow* parent ):TrackPickerDlgGen( parent )
   m_GridSwitch->EnableDragGridSize(false);
   m_GridSwitch->ClearGrid();
   m_GridSwitch->DeleteRows( 0, m_GridSwitch->GetNumberRows() );
-  m_GridSwitch->SetCellTextColour(*wxWHITE);
+  m_GridSwitch->SetDefaultCellTextColour(*wxWHITE);
 
   m_GridSignal->EnableEditing(false);
   m_GridSignal->EnableDragGridSize(false);
   m_GridSignal->ClearGrid();
   m_GridSignal->DeleteRows( 0, m_GridSignal->GetNumberRows() );
-  m_GridSignal->SetCellTextColour(*wxWHITE);
+  m_GridSignal->SetDefaultCellTextColour(*wxWHITE);
 
   m_GridBlock->EnableEditing(false);
   m_GridBlock->EnableDragGridSize(false);
   m_GridBlock->ClearGrid();
   m_GridBlock->DeleteRows( 0, m_GridBlock->GetNumberRows() );
-  m_GridBlock->SetCellTextColour(*wxWHITE);
+  m_GridBlock->SetDefaultCellTextColour(*wxWHITE);
 
   m_GridSensor->EnableEditing(false);
   m_GridSensor->EnableDragGridSize(false);
   m_GridSensor->ClearGrid();
   m_GridSensor->DeleteRows( 0, m_GridSensor->GetNumberRows() );
-  m_GridSensor->SetCellTextColour(*wxWHITE);
+  m_GridSensor->SetDefaultCellTextColour(*wxWHITE);
 
   m_GridAccessory->EnableEditing(false);
   m_GridAccessory->EnableDragGridSize(false);
   m_GridAccessory->ClearGrid();
   m_GridAccessory->DeleteRows( 0, m_GridAccessory->GetNumberRows() );
-  m_GridAccessory->SetCellTextColour(*wxWHITE);
+  m_GridAccessory->SetDefaultCellTextColour(*wxWHITE);
 
   m_GridRoad->EnableEditing(false);
   m_GridRoad->EnableDragGridSize(false);
   m_GridRoad->ClearGrid();
   m_GridRoad->DeleteRows( 0, m_GridRoad->GetNumberRows() );
-  m_GridRoad->SetCellTextColour(*wxWHITE);
+  m_GridRoad->SetDefaultCellTextColour(*wxWHITE);
 
   initSymbols();
 
