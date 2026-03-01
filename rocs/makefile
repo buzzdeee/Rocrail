@@ -58,8 +58,8 @@ ifeq ($(NATIVE),WIN32)
 endif
 
 
-PLATFORM=LINUX
-ARCH=
+PLATFORM ?= LINUX
+ARCH ?=
 ifeq ($(PLATFORM),WIN32)
 	LIBS=-liphlpapi -lmpr -lws2_32 -ladvapi32 -lwinmm
 	COREDIR=win
@@ -92,7 +92,7 @@ ifeq ($(PLATFORM),SOLARIS)
 	LIBS=-lsocket -lnsl -lpthread -ldl
 endif
 ifeq ($(PLATFORM),OPENBSD)
-	LIBS=-pthread
+	LIBS=-lpthread
 endif
 
 TOOLPREFIX=
@@ -105,8 +105,8 @@ OPENSSL=
 SSLLIBS=
 AR=$(TOOLPREFIX)ar
 
-CPP=$(TOOLPREFIX)gcc
-LNK=$(TOOLPREFIX)gcc
+CPP ?= $(TOOLPREFIX)gcc
+LNK ?= $(TOOLPREFIX)gcc
 
 # --- compile flags ---
 CC_FLAGS=-c $(CC_EXTRA_FLAGS) $(DEBUG) $(OPENSSL) -I$(SRCMOUNTPOINT) -I$(GENMOUNTPOINT)
