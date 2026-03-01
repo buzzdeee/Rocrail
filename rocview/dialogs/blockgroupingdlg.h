@@ -95,6 +95,9 @@ class wxListCtrl;
 #ifndef wxCLOSE_BOX
 #define wxCLOSE_BOX 0x1000
 #endif
+#ifndef wxADJUST_MINSIZE
+#define wxADJUST_MINSIZE 0
+#endif
 
 /*!
  * BlockGroupingDialog class declaration

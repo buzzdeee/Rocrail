@@ -40,6 +40,13 @@ class wxSpinCtrl;
 #define SYMBOL_CLOCKDIALOG_POSITION wxDefaultPosition
 ////@end control identifiers
 
+/*!
+ * Compatibility
+ */
+
+#ifndef wxADJUST_MINSIZE
+#define wxADJUST_MINSIZE 0
+#endif
 
 /*!
  * ClockDialog class declaration

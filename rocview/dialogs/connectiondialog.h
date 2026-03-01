@@ -70,6 +70,9 @@
 #ifndef wxFIXED_MINSIZE
 #define wxFIXED_MINSIZE 0
 #endif
+#ifndef wxADJUST_MINSIZE
+#define wxADJUST_MINSIZE 0
+#endif
 
 /*!
  * ConnectionDialog class declaration
