@@ -330,7 +330,7 @@ int RocGui::OnExit() {
 
 // Resource messages:
 extern "C" {
-  extern const char svnLog[];
+  //extern const char svnLog[];
   extern const char messages[];
   extern const char wrapperinfo[];
   extern const char guiwrapperinfo[];
@@ -829,7 +829,7 @@ bool RocGui::OnInit() {
     /*TraceOp.trc( "app", TRCLEVEL_INFO, __LINE__, 9999," bzr %d", m_Svn );*/
   }
   else {
-    iODoc doc = DocOp.parse(svnLog);
+/*    iODoc doc = DocOp.parse(svnLog);
     if( doc != NULL ) {
       iONode log = DocOp.getRootNode(doc);
       DocOp.base.del(doc);
@@ -838,7 +838,7 @@ bool RocGui::OnInit() {
         TraceOp.trc( "app", TRCLEVEL_INFO, __LINE__, 9999," svn %d", m_RevisionNr );
         NodeOp.base.del(log);
       }
-    }
+    } */
   }
 
 
