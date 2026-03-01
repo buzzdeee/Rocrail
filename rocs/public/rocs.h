@@ -42,7 +42,7 @@
   #define _POSIX_SOURCE
   #define __EXTENSIONS__
 #elif defined __unix__
-  #pragma message("--- [Unix] ---")
+  /* #pragma message("--- [Unix] ---") */
 #else
   #error *** Unsupported Operating System ***
 #endif
