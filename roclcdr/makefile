@@ -132,6 +132,15 @@ $(TMPOUTDIR)/%.o: impl/status/%.c
 $(TMPOUTDIR)/%.o: impl/tools/%.c
 	$(CPP) $(CC_FLAGS) $< -o $@
 
+prepare:
+	-$(MKDIR) $(OUTDIR)
+	-$(MKDIR) $(GENDIR)$(FS)roclcdr
+	-$(MKDIR) $(TMPOUTDIR)
+	-$(MKDIR) $(TMPOUTDIR)$(FS)events
+	-$(MKDIR) $(TMPOUTDIR)$(FS)status
+	-$(MKDIR) $(TMPOUTDIR)$(FS)tools
+	cd $(GENDIR)$(FS)roclcdr$(CS) ..$(FS)$(BINDIR)$(FS)ogen$(GENSUFFIX) ..$(FS)..$(FS)roclcdr$(FS)roclcdr.xml ..$(FS)
+
 clean:
 	-$(MKDIR) $(OUTDIR)
 	-$(MKDIR) $(GENDIR)$(FS)roclcdr

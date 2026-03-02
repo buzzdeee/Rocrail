@@ -95,8 +95,13 @@ $(OUTDIR)$(FS)librocutils.a: $(OBJS)
 $(TMPOUTDIR)/%.o: impl/%.c
 	$(CPP) $(CC_FLAGS) $< -o $@
 
+prepare:
+	-$(MKDIR) $(OUTDIR)
+	-$(MKDIR) $(TMPOUTDIR)
+	-$(MKDIR) $(GENDIR)$(FS)rocutils
+	cd $(GENDIR)$(FS)rocutils$(CS) ..$(FS)..$(FS)rocs$(FS)bin$(FS)ogen$(GENSUFFIX) ..$(FS)..$(FS)rocutils$(FS)rocutils.xml
 
-clean:
+clean: 
 	-$(MKDIR) $(OUTDIR)
 	-$(MKDIR) $(TMPOUTDIR)
 	-$(MKDIR) $(GENDIR)$(FS)rocutils

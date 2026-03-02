@@ -84,6 +84,10 @@ CC_FLAGS=-c $(CC_EXTRA_FLAGS) $(DEBUG) -ansi -I$(INCL_PATH) -I$(GENDIR)
 all:
 	cd $(GENDIR)$(FS)rocint$(CS) ..$(FS)..$(FS)rocs$(FS)bin$(FS)ogen$(GENSUFFIX) ..$(FS)..$(FS)rocint$(FS)rocint.xml
 
+prepare:
+	-$(MKDIR) $(OUTDIR)
+	-$(MKDIR) $(GENDIR)$(FS)rocint
+
 clean:
 	-$(MKDIR) $(OUTDIR)
 	-$(MKDIR) $(GENDIR)$(FS)rocint

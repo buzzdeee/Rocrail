@@ -113,7 +113,7 @@ RNOBJS=../unxgen/rocdigs/bin/rocnet/rn-utils.o
 
 TARGET=$(OUTDIR)$(FS)rocnetnode$(BINSUFFIX)
 
-all: version $(TARGET)
+all: versionoffline $(TARGET)
 
 $(TARGET): $(OBJS) $(RRLIBS)
 	$(LNK) $(LNK_FLAGS) -o $(TARGET) $(OBJS) $(RNOBJS) $(RRLIBS) $(LIBS)
@@ -123,6 +123,12 @@ $(TARGET): $(OBJS) $(RRLIBS)
 # ------------------------------------------------------------
 $(TMPOUTDIR)/%.o: impl/%.c $(GENDIR)$(FS)rocrail$(FS)wrapper$(FS)public$(FS)wrapper.h
 	$(CPP) $(CC_FLAGS) $< -o $@
+
+prepare:
+	-$(MKDIR) $(OUTDIR)
+	-$(MKDIR) $(TMPOUTDIR)
+	-$(MKDIR) $(GENDIR)$(FS)rocnetnode
+	cd $(GENDIR)$(FS)rocnetnode$(CS) ..$(FS)$(BINDIR)$(FS)ogen$(GENSUFFIX) ..$(FS)..$(FS)rocnetnode$(FS)rocnetnode.xml ..$(FS)
 
 clean:
 	-$(MKDIR) $(OUTDIR)
@@ -152,3 +158,9 @@ version:
 	git log -n 1 --pretty=format:\"%H\" >> ..$(FS)common$(FS)version.h
 	echo $(QUOT);$(QUOT) >> ..$(FS)common$(FS)version.h
 
+versionoffline: 
+	$(MKDIR) common
+	@echo $(QUOT)const int revisionnr = 0$(QUOT) > common$(FS)version.h
+	@echo $(QUOT);$(QUOT) >> common$(FS)version.h
+	@echo $(QUOT)const char* commithash = 0$(QUOT) >> common$(FS)version.h
+	@echo $(QUOT);$(QUOT) >> common$(FS)version.h

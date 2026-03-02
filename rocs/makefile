@@ -183,8 +183,8 @@ fromtar:
 	-$(MKDIR) $(OUTDIR)
 	-$(MKDIR) $(TMPOUTDIR)
 	-$(MKDIR) $(GENMOUNTPOINT)$(FS)rocs
-	-$(REMOVE) $(TMPOUTDIR)$(FS)*.o
-	-$(REMOVE) $(OUTDIR)$(FS)librocs.a
+	#-$(REMOVE) $(TMPOUTDIR)$(FS)*.o
+	#-$(REMOVE) $(OUTDIR)$(FS)librocs.a
 	cd $(GENMOUNTPOINT)$(CS) \
 	$(COPY) ..$(FS)rocs$(FS)rocs-gen.tar.gz .$(CS) gzip -df rocs-gen.tar.gz$(CS) tar -xf rocs-gen.tar
 

@@ -276,6 +276,24 @@ $(TMPOUTDIR)/srcp/%.o: impl/srcp/%.c
 	
 $(TMPOUTDIR)/zimocan/%.o: impl/zimocan/%.c
 	$(CPP) $(CC_FLAGS) $< -o $@
+
+prepare:
+	-$(MKDIR) $(OUTDIR)
+	-$(MKDIR) $(TMPOUTDIR)$(FS)ddx
+	-$(MKDIR) $(TMPOUTDIR)$(FS)loconet
+	-$(MKDIR) $(TMPOUTDIR)$(FS)rocnet
+	-$(MKDIR) $(TMPOUTDIR)$(FS)ecos
+	-$(MKDIR) $(TMPOUTDIR)$(FS)common
+	-$(MKDIR) $(TMPOUTDIR)$(FS)nmra
+	-$(MKDIR) $(TMPOUTDIR)$(FS)opendcc
+	-$(MKDIR) $(TMPOUTDIR)$(FS)xpressnet
+	-$(MKDIR) $(TMPOUTDIR)$(FS)bidib
+	-$(MKDIR) $(TMPOUTDIR)$(FS)cbus
+	-$(MKDIR) $(TMPOUTDIR)$(FS)srcp
+	-$(MKDIR) $(TMPOUTDIR)$(FS)zimocan
+	-$(MKDIR) $(GENDIR)$(FS)rocdigs
+	cd $(GENDIR)$(FS)rocdigs$(CS) ..$(FS)$(BINDIR)$(FS)ogen$(GENSUFFIX) ..$(FS)..$(FS)rocdigs$(FS)rocdigs.xml ..$(FS)
+	cd $(GENDIR)$(FS)rocdigs$(CS) ..$(FS)$(BINDIR)$(FS)xml2cstr$(GENSUFFIX) ..$(FS)..$(FS)common$(FS)version.xml impl$(FS)version.c svnLog
 	
 clean:
 	-$(MKDIR) $(OUTDIR)

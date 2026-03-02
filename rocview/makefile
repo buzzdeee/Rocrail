@@ -200,6 +200,17 @@ $(TMPOUTDIR)/%.o: $(GENDIR)/rocview/res/%.c
 $(TMPOUTDIR)/%.o: $(GENDIR)/rocview/res/%.cpp
 	$(CPP) $(CC_WXFLAGS) $< -o $@
 
+prepare:
+	-$(MKDIR) $(OUTDIR)
+	-$(MKDIR) $(GENDIR)$(FS)rocview
+	-$(MKDIR) $(GENDIR)$(FS)rocview$(FS)res
+	-$(MKDIR) $(TMPOUTDIR)
+	cd $(GENDIR)$(FS)rocview$(CS) ..$(FS)$(BINDIR)$(FS)wgen$(GENSUFFIX) ..$(FS)..$(FS)rocview$(FS)public$(FS)wrapper.xml
+	cd $(GENDIR)$(FS)rocview$(CS) ..$(FS)$(BINDIR)$(FS)xml2cstr$(GENSUFFIX) ..$(FS)..$(FS)rocview$(FS)res$(FS)messages.xml res$(FS)messages.c messages
+	cd $(GENDIR)$(FS)rocview$(CS) ..$(FS)$(BINDIR)$(FS)png2wx$(GENSUFFIX) ..$(FS)..$(FS)rocview$(FS)icons res$(FS)icons
+	cd $(GENDIR)$(FS)rocview$(CS) ..$(FS)$(BINDIR)$(FS)xml2cstr$(GENSUFFIX) ..$(FS)..$(FS)rocview$(FS)public$(FS)wrapper.xml wrapper$(FS)impl$(FS)guiwrapperinfo.c guiwrapperinfo
+	cd $(GENDIR)$(FS)rocview$(CS) ..$(FS)$(BINDIR)$(FS)xml2cstr$(GENSUFFIX) ..$(FS)..$(FS)common$(FS)version.xml wrapper$(FS)impl$(FS)version.c svnLog
+
 clean:
 	-$(MKDIR) $(OUTDIR)
 	-$(MKDIR) $(GENDIR)$(FS)rocview
