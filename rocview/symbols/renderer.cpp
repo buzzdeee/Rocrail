@@ -1044,14 +1044,14 @@ wxPen* SymbolRenderer::getPen( const char* stroke ) {
   if( stroke == NULL )
     return new wxPen(_T("black"));
   else
-    return new wxPen(wxString(stroke,wxConvUTF8), 1, wxSOLID);
+    return new wxPen(wxString(stroke,wxConvUTF8), 1, wxPENSTYLE_SOLID);
 }
 
 wxBrush* SymbolRenderer::getBrush( const char* fill, wxPaintDC& dc ) {
   if( fill == NULL || StrOp.equalsi( "none", fill ) )
     return new wxBrush(dc.GetBrush());
   else
-    return new wxBrush(wxString(fill,wxConvUTF8), wxSOLID);
+    return new wxBrush(wxString(fill,wxConvUTF8), wxBRUSHSTYLE_SOLID);
 }
 
 
@@ -2010,7 +2010,9 @@ void SymbolRenderer::drawBlockTriangle( wxPaintDC& dc, const char* ori ) {
   const wxBrush& b = dc.GetBrush();
   setBrush( *wxBLACK );
   setPen( wxPen( *wxBLACK, 1));
-  static wxPoint p[4];
+  // below was originally p[4] but below, it's accessing p[4] which is out of bounds
+  // not sure, if this here is really to be bumped to 5, or below fixed to not access p[4]
+  static wxPoint p[5];
   int end ;
 
   if( StrOp.equals( wItem.west, ori ) || StrOp.equals( wItem.east, ori ) ) {
@@ -2640,7 +2642,7 @@ void SymbolRenderer::drawTurntable( wxPaintDC& dc, bool occupied, double* bridge
 
   // Turntable
   wxPen* pen = (wxPen*)wxLIGHT_GREY_PEN;
-  pen->SetStyle(wxSHORT_DASH);
+  pen->SetStyle(wxPENSTYLE_SHORT_DASH);
   pen->SetWidth(1);
 
   int ttdiam = wTurntable.getsymbolsize( m_Props );
@@ -2662,7 +2664,7 @@ void SymbolRenderer::drawTurntable( wxPaintDC& dc, bool occupied, double* bridge
     dc.DrawCircle( delta, delta, delta );
   }
 
-  pen->SetStyle(wxSOLID);
+  pen->SetStyle(wxPENSTYLE_SOLID);
 
   bool matchingTrack = false;
   iONode track = wTurntable.gettrack( m_Props );
@@ -2735,7 +2737,7 @@ void SymbolRenderer::drawTurntable( wxPaintDC& dc, bool occupied, double* bridge
     setBrush( *wxRED_BRUSH );
   }
   else if( sensor1 || sensor2 ) {
-    yellow = new wxBrush( _T("yellow"), wxSOLID );
+    yellow = new wxBrush( _T("yellow"), wxBRUSHSTYLE_SOLID );
     setBrush( *yellow );
   }
   else {

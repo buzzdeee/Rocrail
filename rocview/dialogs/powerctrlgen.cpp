@@ -58,7 +58,7 @@ powerctrlgen::powerctrlgen( wxWindow* parent, wxWindowID id, const wxString& tit
 	
 	m_labHistory = new wxStaticText( this, wxID_ANY, wxT("Select booster..."), wxDefaultPosition, wxDefaultSize, wxALIGN_LEFT );
 	m_labHistory->Wrap( -1 );
-	m_labHistory->SetFont( wxFont( 9, 70, 90, 90, false, wxEmptyString ) );
+	m_labHistory->SetFont( wxFont( 9, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, wxEmptyString ) );
 	
 	bSizer4->Add( m_labHistory, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	

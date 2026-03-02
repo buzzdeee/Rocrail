@@ -368,7 +368,7 @@ cbusnodedlggen::cbusnodedlggen( wxWindow* parent, wxWindowID id, const wxString&
 	bSizer131->Add( fgSizer7, 0, wxEXPAND, 5 );
 	
 	m_HEXFileText = new wxTextCtrl( m_FirmwarePanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxHSCROLL|wxTE_MULTILINE|wxTE_READONLY );
-	m_HEXFileText->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), 70, 90, 90, false, wxT("Monospace") ) );
+	m_HEXFileText->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_NORMAL, false, wxT("Monospace") ) );
 	
 	bSizer131->Add( m_HEXFileText, 1, wxALL|wxEXPAND, 5 );
 	

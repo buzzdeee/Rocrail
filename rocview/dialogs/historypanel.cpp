@@ -66,7 +66,7 @@ void HistoryPanel::OnPaint(wxPaintEvent& event)
   dc.SetPen( *wxLIGHT_GREY_PEN );
   wxPen pen = dc.GetPen();
   pen.SetWidth(1);
-  pen.SetStyle(wxDOT);
+  pen.SetStyle(wxPENSTYLE_DOT);
   dc.SetPen(pen);
   float h10 = (float)h / 10.0;
   for( int i = 1; i < 10; i++) {
