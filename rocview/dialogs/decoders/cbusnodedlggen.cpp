@@ -1304,13 +1304,13 @@ cbusnodedlggen::cbusnodedlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer61->Add( m_labGC6Servo1SpeedR, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
 	
 	m_GC6Servo1LeftAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 100, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer61->Add( m_GC6Servo1LeftAng, 0, wxALIGN_CENTER_HORIZONTAL|wxEXPAND|wxALL, 5 );
+	fgSizer61->Add( m_GC6Servo1LeftAng, 0, wxEXPAND|wxALL, 5 );
 	
 	m_GC6Servo1RightAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 200, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer61->Add( m_GC6Servo1RightAng, 0, wxALIGN_CENTER_HORIZONTAL|wxEXPAND|wxALL, 5 );
+	fgSizer61->Add( m_GC6Servo1RightAng, 0, wxEXPAND|wxALL, 5 );
 	
 	m_GC6Servo1Speed = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer61->Add( m_GC6Servo1Speed, 0, wxALIGN_CENTER_HORIZONTAL|wxEXPAND|wxALL, 5 );
+	fgSizer61->Add( m_GC6Servo1Speed, 0, wxEXPAND|wxALL, 5 );
 	
 	m_GC6Servo1SpeedR = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
 	fgSizer61->Add( m_GC6Servo1SpeedR, 0, wxALL|wxEXPAND, 5 );
@@ -1383,13 +1383,13 @@ cbusnodedlggen::cbusnodedlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer611->Add( m_labGC6Servo2SpeedR, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
 	
 	m_GC6Servo2LeftAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 100, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer611->Add( m_GC6Servo2LeftAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer611->Add( m_GC6Servo2LeftAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo2RightAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 200, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer611->Add( m_GC6Servo2RightAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer611->Add( m_GC6Servo2RightAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo2Speed = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer611->Add( m_GC6Servo2Speed, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer611->Add( m_GC6Servo2Speed, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo2SpeedR = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
 	fgSizer611->Add( m_GC6Servo2SpeedR, 0, wxALL|wxEXPAND, 5 );
@@ -1462,13 +1462,13 @@ cbusnodedlggen::cbusnodedlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer612->Add( m_labGC6Servo3SpeedR, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
 	
 	m_GC6Servo3LeftAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 100, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer612->Add( m_GC6Servo3LeftAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer612->Add( m_GC6Servo3LeftAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo3RightAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 200, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer612->Add( m_GC6Servo3RightAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer612->Add( m_GC6Servo3RightAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo3Speed = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer612->Add( m_GC6Servo3Speed, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer612->Add( m_GC6Servo3Speed, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo3SpeedR = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
 	fgSizer612->Add( m_GC6Servo3SpeedR, 0, wxALL|wxEXPAND, 5 );
@@ -1541,13 +1541,13 @@ cbusnodedlggen::cbusnodedlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer613->Add( m_labGC6Servo4SpeedR, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
 	
 	m_GC6Servo4LeftAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 100, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer613->Add( m_GC6Servo4LeftAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer613->Add( m_GC6Servo4LeftAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo4RightAng = new wxSlider( m_CANGC6Panel, wxID_ANY, 200, 50, 250, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer613->Add( m_GC6Servo4RightAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer613->Add( m_GC6Servo4RightAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo4Speed = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer613->Add( m_GC6Servo4Speed, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer613->Add( m_GC6Servo4Speed, 0, wxALL|wxEXPAND, 5 );
 	
 	m_GC6Servo4SpeedR = new wxSlider( m_CANGC6Panel, wxID_ANY, 5, 1, 20, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
 	fgSizer613->Add( m_GC6Servo4SpeedR, 0, wxALL|wxEXPAND, 5 );

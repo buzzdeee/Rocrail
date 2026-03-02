@@ -31,7 +31,7 @@ ucons88dlggen::ucons88dlggen( wxWindow* parent, wxWindowID id, const wxString& t
 	fgSizer5->Add( m_labIID, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_IID = new wxTextCtrl( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer5->Add( m_IID, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP, 5 );
+	fgSizer5->Add( m_IID, 0, wxALL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP, 5 );
 	
 	bSizer6->Add( fgSizer5, 0, wxEXPAND, 5 );
 	
@@ -48,7 +48,7 @@ ucons88dlggen::ucons88dlggen( wxWindow* parent, wxWindowID id, const wxString& t
 	fgSizer4->Add( m_labHost, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Host = new wxTextCtrl( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_Host, 0, wxALIGN_CENTER_VERTICAL|wxLEFT|wxRIGHT|wxTOP|wxEXPAND, 5 );
+	fgSizer4->Add( m_Host, 0, wxLEFT|wxRIGHT|wxTOP|wxEXPAND, 5 );
 	
 	m_labPort = new wxStaticText( m_General, wxID_ANY, wxT("Port"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labPort->Wrap( -1 );
@@ -74,21 +74,21 @@ ucons88dlggen::ucons88dlggen( wxWindow* parent, wxWindowID id, const wxString& t
 	fgSizer3->Add( m_labBus1, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxTOP|wxLEFT, 5 );
 	
 	m_B1 = new wxSpinCtrl( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxSP_ARROW_KEYS, 0, 16, 0 );
-	fgSizer3->Add( m_B1, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP, 5 );
+	fgSizer3->Add( m_B1, 0, wxEXPAND|wxLEFT|wxRIGHT|wxTOP, 5 );
 	
 	m_labBus2 = new wxStaticText( m_General, wxID_ANY, wxT("Bus 2 Length"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labBus2->Wrap( -1 );
 	fgSizer3->Add( m_labBus2, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxLEFT|wxTOP, 5 );
 	
 	m_B2 = new wxSpinCtrl( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxSP_ARROW_KEYS, 0, 16, 0 );
-	fgSizer3->Add( m_B2, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP, 5 );
+	fgSizer3->Add( m_B2, 0, wxEXPAND|wxLEFT|wxRIGHT|wxTOP, 5 );
 	
 	m_labBus3 = new wxStaticText( m_General, wxID_ANY, wxT("Bus 3 Length"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labBus3->Wrap( -1 );
 	fgSizer3->Add( m_labBus3, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxBOTTOM|wxLEFT|wxTOP, 5 );
 	
 	m_B3 = new wxSpinCtrl( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxSP_ARROW_KEYS, 0, 16, 0 );
-	fgSizer3->Add( m_B3, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND, 5 );
+	fgSizer3->Add( m_B3, 0, wxALL|wxEXPAND, 5 );
 	
 	m_S88BusBox->Add( fgSizer3, 0, wxEXPAND, 5 );
 	
@@ -107,7 +107,7 @@ ucons88dlggen::ucons88dlggen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_StdButtonHelp = new wxButton( this, wxID_HELP );
 	m_StdButton->AddButton( m_StdButtonHelp );
 	m_StdButton->Realize();
-	bSizer5->Add( m_StdButton, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer5->Add( m_StdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer5 );
 	this->Layout();

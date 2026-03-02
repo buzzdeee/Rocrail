@@ -33,14 +33,14 @@ DonKeyGen::DonKeyGen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer1->Add( m_labEmail, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Email = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-	fgSizer1->Add( m_Email, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer1->Add( m_Email, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labExpDate = new wxStaticText( this, wxID_ANY, wxT("Expiration date:"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labExpDate->Wrap( -1 );
 	fgSizer1->Add( m_labExpDate, 0, wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
 	
 	m_ExpDate = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-	fgSizer1->Add( m_ExpDate, 0, wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL, 5 );
+	fgSizer1->Add( m_ExpDate, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer1->Add( fgSizer1, 0, wxEXPAND, 5 );
 	

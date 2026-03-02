@@ -235,7 +235,7 @@
                                 </object>
                                 <object class="sizeritem" expanded="0">
                                     <property name="border">5</property>
-                                    <property name="flag">wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL</property>
+                                    <property name="flag">wxALL|wxEXPAND</property>
                                     <property name="proportion">0</property>
                                     <object class="wxTextCtrl" expanded="0">
                                         <property name="bg"></property>
@@ -533,7 +533,7 @@
                                 </object>
                                 <object class="sizeritem" expanded="0">
                                     <property name="border">5</property>
-                                    <property name="flag">wxEXPAND|wxALIGN_CENTER_VERTICAL</property>
+                                    <property name="flag">wxEXPAND</property>
                                     <property name="proportion">0</property>
                                     <object class="wxFlexGridSizer" expanded="0">
                                         <property name="cols">3</property>
@@ -665,7 +665,7 @@
                                         </object>
                                         <object class="sizeritem" expanded="0">
                                             <property name="border">5</property>
-                                            <property name="flag">wxEXPAND|wxTOP|wxRIGHT|wxLEFT|wxALIGN_CENTER_VERTICAL</property>
+                                            <property name="flag">wxEXPAND|wxTOP|wxRIGHT|wxLEFT</property>
                                             <property name="proportion">0</property>
                                             <object class="wxComboBox" expanded="0">
                                                 <property name="bg"></property>
@@ -798,7 +798,7 @@
                                         </object>
                                         <object class="sizeritem" expanded="0">
                                             <property name="border">5</property>
-                                            <property name="flag">wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT</property>
+                                            <property name="flag">wxEXPAND|wxTOP|wxRIGHT|wxLEFT</property>
                                             <property name="proportion">0</property>
                                             <object class="wxTextCtrl" expanded="0">
                                                 <property name="bg"></property>
@@ -1039,7 +1039,7 @@
                                         </object>
                                         <object class="sizeritem" expanded="0">
                                             <property name="border">5</property>
-                                            <property name="flag">wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT</property>
+                                            <property name="flag">wxEXPAND|wxTOP|wxRIGHT|wxLEFT</property>
                                             <property name="proportion">0</property>
                                             <object class="wxTextCtrl" expanded="0">
                                                 <property name="bg"></property>
@@ -3148,7 +3148,7 @@
                                         <event name="OnUpdateUI"></event>
                                         <object class="sizeritem" expanded="0">
                                             <property name="border">5</property>
-                                            <property name="flag">wxEXPAND|wxALIGN_RIGHT</property>
+                                            <property name="flag">wxEXPAND</property>
                                             <property name="proportion">0</property>
                                             <object class="wxBoxSizer" expanded="0">
                                                 <property name="minimum_size"></property>
@@ -3392,7 +3392,7 @@
                 </object>
                 <object class="sizeritem" expanded="0">
                     <property name="border">5</property>
-                    <property name="flag">wxALL|wxALIGN_RIGHT|wxEXPAND</property>
+                    <property name="flag">wxALL|wxEXPAND</property>
                     <property name="proportion">0</property>
                     <object class="wxStdDialogButtonSizer" expanded="0">
                         <property name="Apply">0</property>

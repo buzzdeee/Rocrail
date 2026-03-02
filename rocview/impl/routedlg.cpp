@@ -94,14 +94,14 @@ RouteCtrlDlg::RouteCtrlDlg(wxWindow *parent)
   m_Grid->SetSelectionMode(wxGrid::wxGridSelectRows);
   m_Grid->AutoSizeColumns();
 
-  sizer2->Add( m_Grid, 0, wxALIGN_CENTER | wxEXPAND | wxALL, 5);
+  sizer2->Add( m_Grid, 0, wxEXPAND | wxALL, 5);
 
-  sizer1->Add( m_Quit, 0, wxALIGN_CENTER | wxEXPAND | wxALL, 5 );
-  sizer1->Add( m_Test, 0, wxALIGN_CENTER | wxEXPAND | wxALL, 5 );
-  sizer1->Add( m_Force, 0, wxALIGN_CENTER | wxEXPAND | wxALL, 5 );
-  sizer1->Add( m_Lock, 0, wxALIGN_CENTER | wxEXPAND | wxALL, 5 );
+  sizer1->Add( m_Quit, 0, wxEXPAND | wxALL, 5 );
+  sizer1->Add( m_Test, 0, wxEXPAND | wxALL, 5 );
+  sizer1->Add( m_Force, 0, wxEXPAND | wxALL, 5 );
+  sizer1->Add( m_Lock, 0, wxEXPAND | wxALL, 5 );
 
-  sizer2->Add( sizer1 , 0, wxALIGN_CENTER | wxEXPAND | wxALL, 0 );
+  sizer2->Add( sizer1 , 0, wxEXPAND | wxALL, 0 );
 
   SetAutoLayout(TRUE);
   SetSizer(sizer2);

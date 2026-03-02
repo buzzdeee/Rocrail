@@ -1063,7 +1063,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="0">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND</property>
+                                                <property name="flag">wxALL|wxEXPAND</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxComboBox" expanded="0">
                                                     <property name="bg"></property>
@@ -1643,7 +1643,7 @@
                                     </object>
                                     <object class="sizeritem" expanded="0">
                                         <property name="border">5</property>
-                                        <property name="flag">wxALIGN_CENTER_VERTICAL|wxEXPAND</property>
+                                        <property name="flag">wxEXPAND</property>
                                         <property name="proportion">0</property>
                                         <object class="wxFlexGridSizer" expanded="0">
                                             <property name="cols">2</property>
@@ -1715,7 +1715,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="0">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND</property>
+                                                <property name="flag">wxALL|wxEXPAND</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxTextCtrl" expanded="0">
                                                     <property name="bg"></property>
@@ -1947,7 +1947,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="0">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL</property>
+                                                <property name="flag">wxEXPAND|wxALL</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxComboBox" expanded="0">
                                                     <property name="bg"></property>
@@ -2062,7 +2062,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="0">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL</property>
+                                                <property name="flag">wxEXPAND|wxALL</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxComboBox" expanded="0">
                                                     <property name="bg"></property>
@@ -2177,7 +2177,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="0">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND</property>
+                                                <property name="flag">wxALL|wxEXPAND</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxComboBox" expanded="0">
                                                     <property name="bg"></property>

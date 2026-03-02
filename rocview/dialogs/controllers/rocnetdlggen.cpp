@@ -35,7 +35,7 @@ rocnetdlggen::rocnetdlggen( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer4->Add( m_labIID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_IID = new wxTextCtrl( m_ConnectionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_IID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer4->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labRocNetID = new wxStaticText( m_ConnectionPanel, wxID_ANY, wxT("Rocnet ID"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labRocNetID->Wrap( -1 );
@@ -89,7 +89,7 @@ rocnetdlggen::rocnetdlggen( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer5->Add( m_labDevice, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Device = new wxComboBox( m_ConnectionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, 0 ); 
-	fgSizer5->Add( m_Device, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer5->Add( m_Device, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer9->Add( fgSizer5, 1, wxEXPAND, 5 );
 	
@@ -113,7 +113,7 @@ rocnetdlggen::rocnetdlggen( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer6->Add( m_labAddress, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_Address = new wxTextCtrl( m_ConnectionPanel, wxID_ANY, wxT("224.0.0.1"), wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer6->Add( m_Address, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer6->Add( m_Address, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labPort = new wxStaticText( m_ConnectionPanel, wxID_ANY, wxT("Port"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labPort->Wrap( -1 );
@@ -137,7 +137,7 @@ rocnetdlggen::rocnetdlggen( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer41->Add( m_labLocoBus, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxRIGHT|wxLEFT, 5 );
 	
 	m_LocoBus = new wxSpinCtrl( m_ConnectionPanel, wxID_ANY, wxT("0"), wxDefaultPosition, wxDefaultSize, wxSP_ARROW_KEYS, 0, 65535, 0 );
-	fgSizer41->Add( m_LocoBus, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxRIGHT|wxLEFT, 5 );
+	fgSizer41->Add( m_LocoBus, 0, wxEXPAND|wxRIGHT|wxLEFT, 5 );
 	
 	m_LocoOptions->Add( fgSizer41, 1, wxEXPAND, 5 );
 	

@@ -32,21 +32,21 @@ bidibdlggen::bidibdlggen( wxWindow* parent, wxWindowID id, const wxString& title
 	fgSizer5->Add( m_labIID, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_IID = new wxTextCtrl( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer5->Add( m_IID, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer5->Add( m_IID, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labDevice = new wxStaticText( m_General, wxID_ANY, wxT("Device"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labDevice->Wrap( -1 );
 	fgSizer5->Add( m_labDevice, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Device = new wxComboBox( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, 0 ); 
-	fgSizer5->Add( m_Device, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer5->Add( m_Device, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labHost = new wxStaticText( m_General, wxID_ANY, wxT("Host"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labHost->Wrap( -1 );
 	fgSizer5->Add( m_labHost, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Host = new wxTextCtrl( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer5->Add( m_Host, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer5->Add( m_Host, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labPort = new wxStaticText( m_General, wxID_ANY, wxT("Port"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labPort->Wrap( -1 );
@@ -140,7 +140,7 @@ bidibdlggen::bidibdlggen( wxWindow* parent, wxWindowID id, const wxString& title
 	m_StdButtonHelp = new wxButton( this, wxID_HELP );
 	m_StdButton->AddButton( m_StdButtonHelp );
 	m_StdButton->Realize();
-	bSizer5->Add( m_StdButton, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer5->Add( m_StdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer5 );
 	this->Layout();

@@ -62,7 +62,7 @@ operatordlggen::operatordlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer3->Add( m_labOperator, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Operator = new wxTextCtrl( m_ControlPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer3->Add( m_Operator, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer3->Add( m_Operator, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer4->Add( fgSizer3, 0, wxEXPAND, 5 );
 	
@@ -83,7 +83,7 @@ operatordlggen::operatordlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer1->Add( m_labLocoID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_LocoID = new wxComboBox( m_ControlPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, wxCB_READONLY ); 
-	fgSizer1->Add( m_LocoID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_LocoID, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer4->Add( fgSizer1, 0, wxEXPAND, 5 );
 	
@@ -96,7 +96,7 @@ operatordlggen::operatordlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer2->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
 	m_Location = new wxComboBox( m_ControlPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), 0, NULL, wxCB_READONLY ); 
-	fgSizer2->Add( m_Location, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxALL, 5 );
+	fgSizer2->Add( m_Location, 0, wxEXPAND|wxALL, 5 );
 	
 	wxBoxSizer* bSizer8;
 	bSizer8 = new wxBoxSizer( wxHORIZONTAL );
@@ -122,7 +122,7 @@ operatordlggen::operatordlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer4->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
 	m_Goto = new wxComboBox( m_ControlPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, wxCB_READONLY ); 
-	fgSizer4->Add( m_Goto, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxALL, 5 );
+	fgSizer4->Add( m_Goto, 0, wxEXPAND|wxALL, 5 );
 	
 	wxBoxSizer* bSizer7;
 	bSizer7 = new wxBoxSizer( wxHORIZONTAL );
@@ -151,7 +151,7 @@ operatordlggen::operatordlggen( wxWindow* parent, wxWindowID id, const wxString&
 	bSizer2->Add( m_CarImage, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_CarList = new wxListCtrl( m_ConsistPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_HRULES|wxLC_REPORT|wxLC_SINGLE_SEL );
-	bSizer2->Add( m_CarList, 1, wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL, 5 );
+	bSizer2->Add( m_CarList, 1, wxALL|wxEXPAND, 5 );
 	
 	wxFlexGridSizer* fgSizer5;
 	fgSizer5 = new wxFlexGridSizer( 0, 2, 0, 0 );
@@ -164,7 +164,7 @@ operatordlggen::operatordlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer5->Add( m_labCargo, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Cargo = new wxComboBox( m_ConsistPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, wxCB_READONLY ); 
-	fgSizer5->Add( m_Cargo, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer5->Add( m_Cargo, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labClass = new wxStaticText( m_ConsistPanel, wxID_ANY, wxT("Class"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labClass->Wrap( -1 );

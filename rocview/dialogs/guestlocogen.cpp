@@ -36,7 +36,7 @@ GuestLocoGen::GuestLocoGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_ShortID = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_ShortID->SetMinSize( wxSize( 120,-1 ) );
 	
-	fgSizer1->Add( m_ShortID, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	fgSizer1->Add( m_ShortID, 0, wxEXPAND|wxALL, 5 );
 	
 	bSizer1->Add( fgSizer1, 1, wxEXPAND, 5 );
 	
@@ -60,7 +60,7 @@ GuestLocoGen::GuestLocoGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_StdButtonHelp = new wxButton( this, wxID_HELP );
 	m_StdButton->AddButton( m_StdButtonHelp );
 	m_StdButton->Realize();
-	bSizer1->Add( m_StdButton, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer1->Add( m_StdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

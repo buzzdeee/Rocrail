@@ -27,7 +27,7 @@ SplDlgGen::SplDlgGen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer2->Add( m_labIID, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_IID = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer2->Add( m_IID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer2->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer1->Add( fgSizer2, 0, wxEXPAND, 5 );
 	
@@ -47,7 +47,7 @@ SplDlgGen::SplDlgGen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer4->Add( m_labDevice, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Device = new wxComboBox( m_SetupPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0, NULL, 0 ); 
-	fgSizer4->Add( m_Device, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer4->Add( m_Device, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer7->Add( fgSizer4, 0, wxEXPAND, 5 );
 	

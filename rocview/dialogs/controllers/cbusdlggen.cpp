@@ -33,7 +33,7 @@ cbusdlggen::cbusdlggen( wxWindow* parent, wxWindowID id, const wxString& title, 
 	fgSizer4->Add( m_labIID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_IID = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_IID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer4->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labCANID = new wxStaticText( this, wxID_ANY, wxT("CANID"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labCANID->Wrap( -1 );
@@ -77,7 +77,7 @@ cbusdlggen::cbusdlggen( wxWindow* parent, wxWindowID id, const wxString& title, 
 	fgSizer5->Add( m_labHost, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL, 5 );
 	
 	m_Host = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer5->Add( m_Host, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxALL, 5 );
+	fgSizer5->Add( m_Host, 0, wxEXPAND|wxALL, 5 );
 	
 	m_labPort = new wxStaticText( this, wxID_ANY, wxT("Port"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labPort->Wrap( -1 );

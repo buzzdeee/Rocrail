@@ -2536,7 +2536,7 @@ void RocGuiFrame::create() {
   m_LocImage = NULL;
   if( wGui.isshowlocoimage(m_Ini) ) {
     m_LocImage = new BitmapButton( m_ActiveLocsPanel, -1, m_LocImageBitmap, wxDefaultPosition, wxSize(250,MAXLOCOIMAGE_HEIGHT+8), wxBU_AUTODRAW|wxBU_EXACTFIT );
-    activeLocsSizer->Add(m_LocImage, 0, wxGROW|wxALL|wxADJUST_MINSIZE, 2);
+    activeLocsSizer->Add(m_LocImage, 0, wxGROW|wxALL, 2);
   }
 
   m_ActiveLocs = new wxGrid( m_ActiveLocsPanel, -1, wxDefaultPosition, wxDefaultSize, wxHSCROLL|wxVSCROLL );
@@ -2581,7 +2581,7 @@ void RocGuiFrame::create() {
     colpos = wLocoGrid.nextcolpos(locoGridIni, colpos);
   }
 
-  activeLocsSizer->Add(m_ActiveLocs, 1, wxGROW|wxALL|wxADJUST_MINSIZE, 2);
+  activeLocsSizer->Add(m_ActiveLocs, 1, wxGROW|wxALL, 2);
 
   TraceOp.trc( "frame", TRCLEVEL_INFO, __LINE__, 9999, "Creating LocPanel..." );
   m_LCPanel = new wxPanel( m_ActiveLocsPanel, -1, wxDefaultPosition, wxDefaultSize, wxTAB_TRAVERSAL );
@@ -2593,7 +2593,7 @@ void RocGuiFrame::create() {
 
   m_LC = NULL;
   m_LC = new LC( m_LCPanel );
-  activeLocsSizer->Add(m_LCPanel, 0, wxGROW|wxALL|wxADJUST_MINSIZE, 2);
+  activeLocsSizer->Add(m_LCPanel, 0, wxGROW|wxALL, 2);
 
   if( m_LocImage != NULL ) {
     m_LocImage->setLC(m_LC);
@@ -2655,8 +2655,8 @@ void RocGuiFrame::create() {
     font.SetPointSize( font.GetPointSize() + wGui.getgridfontsizeadjust(m_Ini) );
     m_WarningPanel->SetFont(font);
   }
-  warningSizer->Add(warningTitle, 0, wxGROW|wxALL|wxADJUST_MINSIZE, 0);
-  warningSizer->Add(m_WarningPanel, 1, wxGROW|wxALL|wxADJUST_MINSIZE, 0);
+  warningSizer->Add(warningTitle, 0, wxGROW|wxALL, 0);
+  warningSizer->Add(m_WarningPanel, 1, wxGROW|wxALL, 0);
 
 
   TraceOp.trc( "frame", TRCLEVEL_INFO, __LINE__, 9999, "Creating Controllerpanel..." );
@@ -2673,8 +2673,8 @@ void RocGuiFrame::create() {
     font.SetPointSize( font.GetPointSize() + wGui.getgridfontsizeadjust(m_Ini) );
     m_MonitorPanel->SetFont(font);
   }
-  monitorSizer->Add(monitorTitle, 0, wxGROW|wxALL|wxADJUST_MINSIZE, 0);
-  monitorSizer->Add(m_MonitorPanel, 1, wxGROW|wxALL|wxADJUST_MINSIZE, 0);
+  monitorSizer->Add(monitorTitle, 0, wxGROW|wxALL, 0);
+  monitorSizer->Add(m_MonitorPanel, 1, wxGROW|wxALL, 0);
 
 
   int pos = wSplitPanel.getmain( wGui.getsplitpanel( m_Ini) );
@@ -5112,10 +5112,10 @@ void RocGuiFrame::OnCellLeftClick( wxGridEvent& event ){
       wxDragResult result = dragSource.DoDragDrop(wxDrag_CopyOnly);
     }
 
-    m_LC->setLocProps( lc );
-    m_CV->setLocProps( lc );
 
     if( lc != NULL ) {
+      m_LC->setLocProps( lc );
+      m_CV->setLocProps( lc );
       wxCommandEvent event( wxEVT_COMMAND_MENU_SELECTED, UPDATE_LOC_IMAGE_EVENT );
       event.SetClientData( NodeOp.base.clone( lc ) );
       wxPostEvent( this, event );

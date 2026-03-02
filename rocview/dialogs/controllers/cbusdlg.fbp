@@ -176,7 +176,7 @@
                                         </object>
                                         <object class="sizeritem" expanded="1">
                                             <property name="border">5</property>
-                                            <property name="flag">wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL</property>
+                                            <property name="flag">wxALL|wxEXPAND</property>
                                             <property name="proportion">0</property>
                                             <object class="wxTextCtrl" expanded="1">
                                                 <property name="bg"></property>
@@ -716,7 +716,7 @@
                                         </object>
                                         <object class="sizeritem" expanded="1">
                                             <property name="border">5</property>
-                                            <property name="flag">wxALIGN_CENTER_VERTICAL|wxEXPAND|wxALL</property>
+                                            <property name="flag">wxEXPAND|wxALL</property>
                                             <property name="proportion">0</property>
                                             <object class="wxTextCtrl" expanded="1">
                                                 <property name="bg"></property>

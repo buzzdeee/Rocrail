@@ -38,7 +38,7 @@ SensorEventsGen::SensorEventsGen( wxWindow* parent, wxWindowID id, const wxStrin
 	m_StdButtonsHelp = new wxButton( this, wxID_HELP );
 	m_StdButtons->AddButton( m_StdButtonsHelp );
 	m_StdButtons->Realize();
-	bSizer1->Add( m_StdButtons, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer1->Add( m_StdButtons, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

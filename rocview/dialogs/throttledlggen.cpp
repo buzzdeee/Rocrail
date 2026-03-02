@@ -21,7 +21,7 @@ ThrottleDlgGen::ThrottleDlgGen( wxWindow* parent, wxWindowID id, const wxString&
 	
 	m_LocoImage->SetMaxSize( wxSize( -1,70 ) );
 	
-	bSizer21->Add( m_LocoImage, 1, wxALIGN_CENTER_HORIZONTAL|wxALL|wxEXPAND, 2 );
+	bSizer21->Add( m_LocoImage, 1, wxALL|wxEXPAND, 2 );
 	
 	wxFlexGridSizer* fgSizer18;
 	fgSizer18 = new wxFlexGridSizer( 0, 3, 0, 0 );

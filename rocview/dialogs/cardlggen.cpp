@@ -77,56 +77,56 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer1->Add( m_labID, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_ID = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_ID, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_ID, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labIdent = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Ident"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labIdent->Wrap( -1 );
 	fgSizer1->Add( m_labIdent, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Ident = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Ident, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Ident, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labLocation = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Location"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labLocation->Wrap( -1 );
 	fgSizer1->Add( m_labLocation, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Location = new wxComboBox( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, 0 ); 
-	fgSizer1->Add( m_Location, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Location, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labRoadname = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Roadname"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labRoadname->Wrap( -1 );
 	fgSizer1->Add( m_labRoadname, 0, wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT|wxALIGN_RIGHT, 5 );
 	
 	m_Roadname = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Roadname, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_Roadname, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labNumber = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Number"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labNumber->Wrap( -1 );
 	fgSizer1->Add( m_labNumber, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxBOTTOM|wxRIGHT|wxLEFT, 5 );
 	
 	m_Number = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Number, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Number, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labColor = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Color"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labColor->Wrap( -1 );
 	fgSizer1->Add( m_labColor, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Color = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Color, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Color, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labImageName = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Image"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labImageName->Wrap( -1 );
 	fgSizer1->Add( m_labImageName, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_ImageName = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_ImageName, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_ImageName, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labOwner = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Owner"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labOwner->Wrap( -1 );
 	fgSizer1->Add( m_labOwner, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Owner = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Owner, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Owner, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	bSizer3->Add( fgSizer1, 0, wxEXPAND, 5 );
 	
@@ -174,7 +174,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer3->Add( m_labSubtype, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxBOTTOM|wxRIGHT|wxLEFT, 5 );
 	
 	m_SubType = new wxComboBox( m_DetailsPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, 0 ); 
-	fgSizer3->Add( m_SubType, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxBOTTOM|wxRIGHT|wxLEFT, 5 );
+	fgSizer3->Add( m_SubType, 0, wxEXPAND|wxBOTTOM|wxRIGHT|wxLEFT, 5 );
 	
 	m_labLength = new wxStaticText( m_DetailsPanel, wxID_ANY, wxT("Length"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labLength->Wrap( -1 );
@@ -211,7 +211,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer3->Add( m_labManuId, 0, wxALIGN_RIGHT|wxBOTTOM|wxRIGHT|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_ManuId = new wxTextCtrl( m_DetailsPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer3->Add( m_ManuId, 0, wxEXPAND|wxBOTTOM|wxRIGHT|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer3->Add( m_ManuId, 0, wxEXPAND|wxBOTTOM|wxRIGHT|wxLEFT, 5 );
 	
 	m_labVMax = new wxStaticText( m_DetailsPanel, wxID_ANY, wxT("V_max"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labVMax->Wrap( -1 );
@@ -261,7 +261,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer31->Add( m_labIID, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_IID = new wxTextCtrl( m_InterfacePanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer31->Add( m_IID, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer31->Add( m_IID, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labAddr = new wxStaticText( m_InterfacePanel, wxID_ANY, wxT("Address"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labAddr->Wrap( -1 );
@@ -368,7 +368,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer4->Add( m_F0, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_F0Desc = new wxTextCtrl( m_FunctionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_F0Desc, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer4->Add( m_F0Desc, 0, wxALL|wxEXPAND, 5 );
 	
 	m_F0x = new wxSpinCtrl( m_FunctionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 60,-1 ), wxSP_ARROW_KEYS, 0, 28, 0 );
 	fgSizer4->Add( m_F0x, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
@@ -383,7 +383,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer4->Add( m_F1, 0, wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
 	m_F1Desc = new wxTextCtrl( m_FunctionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_F1Desc, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer4->Add( m_F1Desc, 0, wxALL|wxEXPAND, 5 );
 	
 	m_F1x = new wxSpinCtrl( m_FunctionPanel, wxID_ANY, wxT("0"), wxDefaultPosition, wxSize( 60,-1 ), wxSP_ARROW_KEYS, 0, 28, 0 );
 	fgSizer4->Add( m_F1x, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
@@ -398,7 +398,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer4->Add( m_F2, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_F2Desc = new wxTextCtrl( m_FunctionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_F2Desc, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer4->Add( m_F2Desc, 0, wxALL|wxEXPAND, 5 );
 	
 	m_F2x = new wxSpinCtrl( m_FunctionPanel, wxID_ANY, wxT("0"), wxDefaultPosition, wxSize( 60,-1 ), wxSP_ARROW_KEYS, 0, 28, 0 );
 	fgSizer4->Add( m_F2x, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
@@ -413,7 +413,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer4->Add( m_F3, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_F3Desc = new wxTextCtrl( m_FunctionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_F3Desc, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer4->Add( m_F3Desc, 0, wxALL|wxEXPAND, 5 );
 	
 	m_F3x = new wxSpinCtrl( m_FunctionPanel, wxID_ANY, wxT("0"), wxDefaultPosition, wxSize( 60,-1 ), wxSP_ARROW_KEYS, 0, 28, 0 );
 	fgSizer4->Add( m_F3x, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
@@ -428,7 +428,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer4->Add( m_F4, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_F4Desc = new wxTextCtrl( m_FunctionPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer4->Add( m_F4Desc, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer4->Add( m_F4Desc, 0, wxALL|wxEXPAND, 5 );
 	
 	m_F4x = new wxSpinCtrl( m_FunctionPanel, wxID_ANY, wxT("0"), wxDefaultPosition, wxSize( 60,-1 ), wxSP_ARROW_KEYS, 0, 28, 0 );
 	fgSizer4->Add( m_F4x, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
@@ -516,7 +516,7 @@ cardlggen::cardlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	m_stdButtonHelp = new wxButton( this, wxID_HELP );
 	m_stdButton->AddButton( m_stdButtonHelp );
 	m_stdButton->Realize();
-	bSizer1->Add( m_stdButton, 0, wxALIGN_RIGHT|wxALL|wxEXPAND, 5 );
+	bSizer1->Add( m_stdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

@@ -83,7 +83,7 @@ ChannelTuneDlgGen::ChannelTuneDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	m_StdButtonHelp = new wxButton( this, wxID_HELP );
 	m_StdButton->AddButton( m_StdButtonHelp );
 	m_StdButton->Realize();
-	bSizer20->Add( m_StdButton, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer20->Add( m_StdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer20 );
 	this->Layout();

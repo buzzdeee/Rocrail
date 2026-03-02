@@ -493,7 +493,7 @@ speedcurvedlggen::speedcurvedlggen( wxWindow* parent, wxWindowID id, const wxStr
 	m_stdButton->Realize();
 	bSizer71->Add( m_stdButton, 1, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
-	bSizer1->Add( bSizer71, 0, wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer1->Add( bSizer71, 0, wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

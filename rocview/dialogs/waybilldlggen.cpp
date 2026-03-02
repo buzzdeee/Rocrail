@@ -59,14 +59,14 @@ waybillgen::waybillgen( wxWindow* parent, wxWindowID id, const wxString& title, 
 	fgSizer1->Add( m_labID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_ID = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_ID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_ID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labShipper = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Shipper"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labShipper->Wrap( -1 );
 	fgSizer1->Add( m_labShipper, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Shipper = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Shipper, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Shipper, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labOrigin = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Origin"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labOrigin->Wrap( -1 );
@@ -80,7 +80,7 @@ waybillgen::waybillgen( wxWindow* parent, wxWindowID id, const wxString& title, 
 	fgSizer1->Add( m_labConsignee, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Consignee = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Consignee, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Consignee, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labDestination = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Destination"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labDestination->Wrap( -1 );
@@ -96,7 +96,7 @@ waybillgen::waybillgen( wxWindow* parent, wxWindowID id, const wxString& title, 
 	m_Commodity = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_MULTILINE );
 	m_Commodity->SetMinSize( wxSize( -1,80 ) );
 	
-	fgSizer1->Add( m_Commodity, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer1->Add( m_Commodity, 1, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_labCartype = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Car type"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labCartype->Wrap( -1 );
@@ -141,7 +141,7 @@ waybillgen::waybillgen( wxWindow* parent, wxWindowID id, const wxString& title, 
 	m_stdButtonHelp = new wxButton( this, wxID_HELP );
 	m_stdButton->AddButton( m_stdButtonHelp );
 	m_stdButton->Realize();
-	bSizer1->Add( m_stdButton, 0, wxALIGN_RIGHT|wxALL|wxEXPAND, 5 );
+	bSizer1->Add( m_stdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

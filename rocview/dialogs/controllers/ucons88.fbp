@@ -214,7 +214,7 @@
                                     </object>
                                     <object class="sizeritem" expanded="1">
                                         <property name="border">5</property>
-                                        <property name="flag">wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP</property>
+                                        <property name="flag">wxALL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP</property>
                                         <property name="proportion">0</property>
                                         <object class="wxTextCtrl" expanded="1">
                                             <property name="bg"></property>
@@ -360,7 +360,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="1">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALIGN_CENTER_VERTICAL|wxLEFT|wxRIGHT|wxTOP|wxEXPAND</property>
+                                                <property name="flag">wxLEFT|wxRIGHT|wxTOP|wxEXPAND</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxTextCtrl" expanded="1">
                                                     <property name="bg"></property>
@@ -624,7 +624,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="1">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALIGN_CENTER_VERTICAL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP</property>
+                                                <property name="flag">wxEXPAND|wxLEFT|wxRIGHT|wxTOP</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxSpinCtrl" expanded="1">
                                                     <property name="bg"></property>
@@ -740,7 +740,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="1">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALIGN_CENTER_VERTICAL|wxEXPAND|wxLEFT|wxRIGHT|wxTOP</property>
+                                                <property name="flag">wxEXPAND|wxLEFT|wxRIGHT|wxTOP</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxSpinCtrl" expanded="1">
                                                     <property name="bg"></property>
@@ -856,7 +856,7 @@
                                             </object>
                                             <object class="sizeritem" expanded="1">
                                                 <property name="border">5</property>
-                                                <property name="flag">wxALIGN_CENTER_VERTICAL|wxALL|wxEXPAND</property>
+                                                <property name="flag">wxALL|wxEXPAND</property>
                                                 <property name="proportion">0</property>
                                                 <object class="wxSpinCtrl" expanded="1">
                                                     <property name="bg"></property>
@@ -923,7 +923,7 @@
                 </object>
                 <object class="sizeritem" expanded="1">
                     <property name="border">5</property>
-                    <property name="flag">wxALL|wxALIGN_RIGHT|wxEXPAND</property>
+                    <property name="flag">wxALL|wxEXPAND</property>
                     <property name="proportion">0</property>
                     <object class="wxStdDialogButtonSizer" expanded="1">
                         <property name="Apply">0</property>

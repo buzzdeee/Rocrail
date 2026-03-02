@@ -60,7 +60,7 @@ AccDecGenDlg::AccDecGenDlg( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer1->Add( m_labIID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_IID = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_IID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labID = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("ID"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labID->Wrap( -1 );
@@ -74,7 +74,7 @@ AccDecGenDlg::AccDecGenDlg( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer1->Add( m_labImageFile, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_ImageFile = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_ImageFile, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_ImageFile, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer4->Add( fgSizer1, 0, wxEXPAND, 5 );
 	
@@ -123,7 +123,7 @@ AccDecGenDlg::AccDecGenDlg( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer3->Add( m_labManu, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_Manu = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer3->Add( m_Manu, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer3->Add( m_Manu, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labCatNr = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("CatNr"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labCatNr->Wrap( -1 );
@@ -216,7 +216,7 @@ AccDecGenDlg::AccDecGenDlg( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_StdButtonHelp = new wxButton( this, wxID_HELP );
 	m_StdButton->AddButton( m_StdButtonHelp );
 	m_StdButton->Realize();
-	bSizer1->Add( m_StdButton, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer1->Add( m_StdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

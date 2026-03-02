@@ -32,7 +32,7 @@ RocProDlgGen::RocProDlgGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	bSizer10->Add( m_labInfo, 0, wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Info = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,60 ), wxTE_MULTILINE|wxTE_PROCESS_ENTER );
-	bSizer10->Add( m_Info, 0, wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL, 5 );
+	bSizer10->Add( m_Info, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer8->Add( bSizer10, 0, wxEXPAND, 5 );
 	
@@ -74,9 +74,9 @@ RocProDlgGen::RocProDlgGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer4->Add( m_IID, 0, wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_LocoList = new wxComboBox( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,25 ), 0, NULL, wxCB_READONLY|wxCB_SIMPLE ); 
-	fgSizer4->Add( m_LocoList, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer4->Add( m_LocoList, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
-	bSizer9->Add( fgSizer4, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	bSizer9->Add( fgSizer4, 0, wxEXPAND, 5 );
 	
 	wxFlexGridSizer* fgSizer8;
 	fgSizer8 = new wxFlexGridSizer( 0, 3, 0, 0 );
@@ -89,7 +89,7 @@ RocProDlgGen::RocProDlgGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer8->Add( m_labFile, 0, wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_DecFile = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), 0 );
-	fgSizer8->Add( m_DecFile, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer8->Add( m_DecFile, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	wxBoxSizer* bSizer81;
 	bSizer81 = new wxBoxSizer( wxHORIZONTAL );
@@ -107,7 +107,7 @@ RocProDlgGen::RocProDlgGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	fgSizer8->Add( m_labImage, 0, wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_Image = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer8->Add( m_Image, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT|wxLEFT, 5 );
+	fgSizer8->Add( m_Image, 0, wxEXPAND|wxTOP|wxRIGHT|wxLEFT, 5 );
 	
 	m_ImgFileOpen = new wxButton( this, wxID_ANY, wxT("Open..."), wxDefaultPosition, wxDefaultSize, 0 );
 	fgSizer8->Add( m_ImgFileOpen, 0, wxALIGN_CENTER_VERTICAL|wxTOP|wxRIGHT, 5 );
@@ -274,7 +274,7 @@ RocProDlgGen::RocProDlgGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_PT = new wxToggleButton( this, wxID_ANY, wxT("PT"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer6->Add( m_PT, 0, wxRIGHT|wxLEFT|wxALIGN_CENTER_VERTICAL, 5 );
 	
-	m_Special->Add( bSizer6, 0, wxEXPAND|wxALIGN_RIGHT, 5 );
+	m_Special->Add( bSizer6, 0, wxEXPAND, 5 );
 	
 	bSizer9->Add( m_Special, 0, wxRIGHT|wxLEFT|wxEXPAND, 5 );
 	
@@ -288,7 +288,7 @@ RocProDlgGen::RocProDlgGen( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_sdbSizer2Help = new wxButton( this, wxID_HELP );
 	m_sdbSizer2->AddButton( m_sdbSizer2Help );
 	m_sdbSizer2->Realize();
-	bSizer7->Add( m_sdbSizer2, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer7->Add( m_sdbSizer2, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer7 );
 	this->Layout();

@@ -1226,10 +1226,10 @@ void CV::CreateControls() {
   m_LocBox->Add(m_LcList, 3, wxGROW|wxALL, 1);
 
   m_loadFile = new wxButton( m_ItemPanel, -1, _("Import"), wxDefaultPosition, wxSize(60, 26), 0 );
-  m_LocBox->Add(m_loadFile, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
+  m_LocBox->Add(m_loadFile, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
 
   m_saveFile = new wxButton( m_ItemPanel, -1, _("Export"), wxDefaultPosition, wxSize(60, 26), 0 );
-  m_LocBox->Add(m_saveFile, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
+  m_LocBox->Add(m_saveFile, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
 
   m_OptionBox = new wxBoxSizer(wxHORIZONTAL);
   m_PanelMainBox->Add(m_OptionBox, 0, wxGROW|wxALL|wxADJUST_MINSIZE, 2);
@@ -1240,15 +1240,15 @@ void CV::CreateControls() {
 
   m_POM = new wxCheckBox( m_ItemPanel, -1, _T("PoM"), wxDefaultPosition, wxDefaultSize, 0 );
   m_POM->SetToolTip(_T("Program On the Main") );
-  m_OptionBox->Add(m_POM, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
+  m_OptionBox->Add(m_POM, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
 
   m_Acc = new wxCheckBox( m_ItemPanel, -1, _T("Acc"), wxDefaultPosition, wxDefaultSize, 0 );
   m_Acc->SetToolTip(_T("Accessory") );
-  m_OptionBox->Add(m_Acc, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
+  m_OptionBox->Add(m_Acc, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
 
   m_Direct = new wxCheckBox( m_ItemPanel, -1, _T("Direct"), wxDefaultPosition, wxDefaultSize, 0 );
   m_Direct->SetToolTip(_T("Direct programming mode") );
-  m_OptionBox->Add(m_Direct, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
+  m_OptionBox->Add(m_Direct, 0, wxALIGN_CENTER_VERTICAL|wxALL|wxADJUST_MINSIZE, 2);
 
   m_TableBox = new wxFlexGridSizer(0, 2, 0, 0);
   m_TableBox->AddGrowableCol(1);

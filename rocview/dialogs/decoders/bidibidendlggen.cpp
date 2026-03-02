@@ -73,7 +73,7 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	fgSizer16->Add( m_VIDD, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_VendorName = new wxTextCtrl( m_IndexPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxTE_READONLY );
-	fgSizer16->Add( m_VendorName, 0, wxEXPAND|wxALL|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer16->Add( m_VendorName, 0, wxEXPAND|wxALL, 5 );
 	
 	fgSizer8->Add( fgSizer16, 1, wxEXPAND, 5 );
 	
@@ -103,7 +103,7 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	fgSizer8->Add( m_labClass, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Class = new wxTextCtrl( m_IndexPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 200,-1 ), wxTE_READONLY );
-	fgSizer8->Add( m_Class, 0, wxEXPAND|wxALL|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer8->Add( m_Class, 0, wxEXPAND|wxALL, 5 );
 	
 	m_labUsername = new wxStaticText( m_IndexPanel, wxID_ANY, wxT("Username"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labUsername->Wrap( -1 );
@@ -116,12 +116,12 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	fgSizer20->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
 	
 	m_Username = new wxTextCtrl( m_IndexPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer20->Add( m_Username, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer20->Add( m_Username, 0, wxALL|wxEXPAND, 5 );
 	
 	m_UsernameSet = new wxButton( m_IndexPanel, wxID_ANY, wxT("Set"), wxDefaultPosition, wxDefaultSize, 0 );
 	fgSizer20->Add( m_UsernameSet, 0, wxALL, 5 );
 	
-	fgSizer8->Add( fgSizer20, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer8->Add( fgSizer20, 0, wxEXPAND, 5 );
 	
 	bSizer22->Add( fgSizer8, 0, wxEXPAND, 5 );
 	
@@ -148,7 +148,7 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	m_UID = new wxTextCtrl( m_IndexPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 100,-1 ), wxTE_READONLY );
 	fgSizer6->Add( m_UID, 0, wxEXPAND|wxALL, 5 );
 	
-	fgSizer18->Add( fgSizer6, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer18->Add( fgSizer6, 0, wxEXPAND, 5 );
 	
 	m_labVersion = new wxStaticText( m_IndexPanel, wxID_ANY, wxT("Version"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labVersion->Wrap( -1 );
@@ -541,16 +541,16 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	fgSizer4->Add( m_labServoReserved, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_ServoLeft = new wxSlider( m_ServoPanel, wxID_ANY, 0, 0, 255, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer4->Add( m_ServoLeft, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer4->Add( m_ServoLeft, 1, wxALL|wxEXPAND, 5 );
 	
 	m_ServoRight = new wxSlider( m_ServoPanel, wxID_ANY, 0, 0, 255, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer4->Add( m_ServoRight, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer4->Add( m_ServoRight, 1, wxALL|wxEXPAND, 5 );
 	
 	m_ServoSpeed = new wxSlider( m_ServoPanel, wxID_ANY, 0, 0, 255, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer4->Add( m_ServoSpeed, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer4->Add( m_ServoSpeed, 1, wxALL|wxEXPAND, 5 );
 	
 	m_ServoReserved = new wxSlider( m_ServoPanel, wxID_ANY, 0, 0, 255, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer4->Add( m_ServoReserved, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer4->Add( m_ServoReserved, 1, wxALL|wxEXPAND, 5 );
 	
 	m_ConfigL = new wxSpinCtrl( m_ServoPanel, wxID_ANY, wxT("0"), wxDefaultPosition, wxSize( 60,-1 ), wxSP_ARROW_KEYS, 0, 255, 0 );
 	fgSizer4->Add( m_ConfigL, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5 );
@@ -859,7 +859,7 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	fgSizer51->Add( m_labUpdateFile, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_UpdateFile = new wxTextCtrl( m_UpdatePanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer51->Add( m_UpdateFile, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer51->Add( m_UpdateFile, 0, wxALL|wxEXPAND, 5 );
 	
 	m_OpenUpdateFile = new wxButton( m_UpdatePanel, wxID_ANY, wxT("..."), wxDefaultPosition, wxSize( 50,-1 ), 0 );
 	fgSizer51->Add( m_OpenUpdateFile, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
@@ -873,7 +873,7 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	m_HEXFileText = new wxTextCtrl( m_UpdatePanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_MULTILINE|wxTE_READONLY );
 	m_HEXFileText->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), 76, 90, 90, false, wxEmptyString ) );
 	
-	bSizer111->Add( m_HEXFileText, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer111->Add( m_HEXFileText, 1, wxALL|wxEXPAND, 5 );
 	
 	m_UpdateProgress = new wxGauge( m_UpdatePanel, wxID_ANY, 100, wxDefaultPosition, wxDefaultSize, wxGA_HORIZONTAL );
 	bSizer111->Add( m_UpdateProgress, 0, wxALL|wxEXPAND, 5 );
@@ -901,7 +901,7 @@ BidibIdentDlgGen::BidibIdentDlgGen( wxWindow* parent, wxWindowID id, const wxStr
 	m_stdButtonsHelp = new wxButton( this, wxID_HELP );
 	m_stdButtons->AddButton( m_stdButtonsHelp );
 	m_stdButtons->Realize();
-	bSizer7->Add( m_stdButtons, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND|wxALIGN_RIGHT|wxBOTTOM|wxRIGHT|wxLEFT, 5 );
+	bSizer7->Add( m_stdButtons, 0, wxEXPAND|wxBOTTOM|wxRIGHT|wxLEFT, 5 );
 	
 	this->SetSizer( bSizer7 );
 	this->Layout();

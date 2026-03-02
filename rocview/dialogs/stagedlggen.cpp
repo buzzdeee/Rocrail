@@ -93,7 +93,7 @@ stagedlggen::stagedlggen( wxWindow* parent, wxWindowID id, const wxString& title
 	fgSizer6->Add( m_labEnterSensor, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_EnterSensor = new wxComboBox( m_General, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, 0 ); 
-	fgSizer6->Add( m_EnterSensor, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer6->Add( m_EnterSensor, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labEnterSignal = new wxStaticText( m_General, wxID_ANY, wxT("Enter signal"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labEnterSignal->Wrap( -1 );
@@ -143,7 +143,7 @@ stagedlggen::stagedlggen( wxWindow* parent, wxWindowID id, const wxString& title
 	fgSizer5->Add( m_labSectionID, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_SectionID = new wxTextCtrl( m_Sections, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer5->Add( m_SectionID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer5->Add( m_SectionID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labOwnSectionLength = new wxStaticText( m_Sections, wxID_ANY, wxT("Length"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labOwnSectionLength->Wrap( -1 );
@@ -157,23 +157,23 @@ stagedlggen::stagedlggen( wxWindow* parent, wxWindowID id, const wxString& title
 	fgSizer5->Add( m_labSectionSensor, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_SectionSensor = new wxComboBox( m_Sections, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, wxCB_READONLY ); 
-	fgSizer5->Add( m_SectionSensor, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	fgSizer5->Add( m_SectionSensor, 0, wxEXPAND|wxALL, 5 );
 	
 	m_labOccSensor = new wxStaticText( m_Sections, wxID_ANY, wxT("Occupancy"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labOccSensor->Wrap( -1 );
 	fgSizer5->Add( m_labOccSensor, 0, wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT|wxALL, 5 );
 	
 	m_OccSensor = new wxComboBox( m_Sections, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, wxCB_READONLY ); 
-	fgSizer5->Add( m_OccSensor, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
+	fgSizer5->Add( m_OccSensor, 0, wxEXPAND|wxALL, 5 );
 	
 	m_labSectionLocoId = new wxStaticText( m_Sections, wxID_ANY, wxT("Loco ID"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labSectionLocoId->Wrap( -1 );
 	fgSizer5->Add( m_labSectionLocoId, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_SectionLocoId = new wxComboBox( m_Sections, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, wxCB_READONLY ); 
-	fgSizer5->Add( m_SectionLocoId, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer5->Add( m_SectionLocoId, 0, wxALL|wxEXPAND, 5 );
 	
-	bSizer8->Add( fgSizer5, 0, wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	bSizer8->Add( fgSizer5, 0, wxEXPAND, 5 );
 	
 	wxBoxSizer* m_SectionButtons;
 	m_SectionButtons = new wxBoxSizer( wxHORIZONTAL );

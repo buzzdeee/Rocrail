@@ -892,10 +892,10 @@ void LC::CreateControls() {
 
 
   m_ButtonSizer = new wxBoxSizer(wxVERTICAL);
-  m_MainSizer->Add(m_ButtonSizer, 0, wxGROW|wxALIGN_CENTER_VERTICAL|wxALL, 5);
+  m_MainSizer->Add(m_ButtonSizer, 0, wxGROW|wxALL, 5);
 
   wxBoxSizer* l_sizer0 = new wxBoxSizer(wxHORIZONTAL);
-  m_ButtonSizer->Add(l_sizer0, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 0);
+  m_ButtonSizer->Add(l_sizer0, 0, wxGROW|wxALL, 0);
 
 #ifdef USENEWLOOK
   m_FG = new LEDButton( m_Parent, _("FG"), 50, 25, false );
@@ -914,10 +914,10 @@ void LC::CreateControls() {
   m_V->SetFont(f);
 
 #endif
-  l_sizer0->Add(m_V, 0, wxALIGN_CENTER_VERTICAL|wxGROW|wxALL, 1);
+  l_sizer0->Add(m_V, 0, wxGROW|wxALL, 1);
 
   m_Button1Sizer = new wxBoxSizer(wxHORIZONTAL);
-  m_ButtonSizer->Add(m_Button1Sizer, 0, wxGROW|wxALIGN_CENTER_HORIZONTAL|wxALL, 0);
+  m_ButtonSizer->Add(m_Button1Sizer, 0, wxGROW|wxALL, 0);
 
 #ifdef USENEWLOOK
   m_F1 = new LEDButton( m_Parent, _("F1"), 50, 25 );

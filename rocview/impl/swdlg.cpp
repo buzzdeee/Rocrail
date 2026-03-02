@@ -116,28 +116,28 @@ SwCtrlDlg::SwCtrlDlg(wxWindow *parent)
 
   m_UnitSpin->SetValue( m_Unit );
 
-  sizer2->Add( m_Pin1Green, 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_Pin1Red  , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_Pin2Green, 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_Pin2Red  , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_Pin3Green, 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_Pin3Red  , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_Pin4Green, 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_Pin4Red  , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin1Green, 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin1Red  , 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin2Green, 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin2Red  , 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin3Green, 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin3Red  , 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin4Green, 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_Pin4Red  , 0, wxEXPAND | wxALL, 2);
 
-  sizer2->Add( m_labIID, 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_IID   , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
+  sizer2->Add( m_labIID, 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_IID   , 0, wxEXPAND | wxALL, 2);
 
-  sizer2->Add( m_labBus , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_BusSpin, 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
+  sizer2->Add( m_labBus , 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_BusSpin, 0, wxEXPAND | wxALL, 2);
 
   wxStaticText* unitlabel = new wxStaticText( this, -1, wxGetApp().getMsg("decoder"), wxPoint(0,0), wxDefaultSize, wxALIGN_RIGHT );
-  sizer2->Add( unitlabel , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
-  sizer2->Add( m_UnitSpin, 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 2);
+  sizer2->Add( unitlabel , 0, wxEXPAND | wxALL, 2);
+  sizer2->Add( m_UnitSpin, 0, wxEXPAND | wxALL, 2);
 
-  sizer1->Add( sizer2 , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 3 );
-  //sizer1->Add( m_UnitSpin , 0, wxALIGN_CENTER | wxEXPAND | wxALL, 5 );
-  sizer1->Add( m_Quit , 0, wxALIGN_CENTER_VERTICAL | wxEXPAND | wxALL, 5 );
+  sizer1->Add( sizer2 , 0, wxEXPAND | wxALL, 3 );
+  //sizer1->Add( m_UnitSpin , 0, wxEXPAND | wxALL, 5 );
+  sizer1->Add( m_Quit , 0, wxEXPAND | wxALL, 5 );
 
   SetAutoLayout(TRUE);
   SetSizer(sizer1);

@@ -274,7 +274,7 @@
                         </object>
                         <object class="sizeritem" expanded="1">
                             <property name="border">5</property>
-                            <property name="flag">wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL</property>
+                            <property name="flag">wxEXPAND|wxALL</property>
                             <property name="proportion">0</property>
                             <object class="wxTextCtrl" expanded="1">
                                 <property name="bg"></property>
@@ -454,7 +454,7 @@
                 </object>
                 <object class="sizeritem" expanded="1">
                     <property name="border">5</property>
-                    <property name="flag">wxALL|wxALIGN_RIGHT|wxEXPAND</property>
+                    <property name="flag">wxALL|wxEXPAND</property>
                     <property name="proportion">0</property>
                     <object class="wxStdDialogButtonSizer" expanded="1">
                         <property name="Apply">0</property>

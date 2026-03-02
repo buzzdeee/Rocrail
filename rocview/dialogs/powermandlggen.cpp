@@ -56,21 +56,21 @@ powermandlggen::powermandlggen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer2->Add( m_labID, 0, wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL|wxALL, 5 );
 	
 	m_ID = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer2->Add( m_ID, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL|wxALL, 5 );
+	fgSizer2->Add( m_ID, 0, wxEXPAND|wxALL, 5 );
 	
 	m_labIID = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("IID"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labIID->Wrap( -1 );
 	fgSizer2->Add( m_labIID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_IID = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer2->Add( m_IID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL, 5 );
+	fgSizer2->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labDistrict = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("District"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labDistrict->Wrap( -1 );
 	fgSizer2->Add( m_labDistrict, 0, wxTOP|wxBOTTOM|wxLEFT|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_District = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer2->Add( m_District, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
+	fgSizer2->Add( m_District, 0, wxEXPAND|wxALL, 5 );
 	
 	bSizer14->Add( fgSizer2, 0, wxEXPAND, 5 );
 	
@@ -224,7 +224,7 @@ powermandlggen::powermandlggen( wxWindow* parent, wxWindowID id, const wxString&
 	m_sdbSizer1Help = new wxButton( this, wxID_HELP );
 	m_sdbSizer1->AddButton( m_sdbSizer1Help );
 	m_sdbSizer1->Realize();
-	bSizer6->Add( m_sdbSizer1, 0, wxALIGN_RIGHT|wxEXPAND|wxALL, 5 );
+	bSizer6->Add( m_sdbSizer1, 0, wxEXPAND|wxALL, 5 );
 	
 	this->SetSizer( bSizer6 );
 	this->Layout();

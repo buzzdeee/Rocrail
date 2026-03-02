@@ -30,7 +30,7 @@ dtopswdlg::dtopswdlg( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer2->Add( m_labIID, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_IID = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer2->Add( m_IID, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer2->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labBoardNumber = new wxStaticText( this, wxID_ANY, wxT("Address"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labBoardNumber->Wrap( -1 );
@@ -81,7 +81,7 @@ dtopswdlg::dtopswdlg( wxWindow* parent, wxWindowID id, const wxString& title, co
 	m_sdbSizer1Help = new wxButton( this, wxID_HELP );
 	m_sdbSizer1->AddButton( m_sdbSizer1Help );
 	m_sdbSizer1->Realize();
-	bSizer1->Add( m_sdbSizer1, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer1->Add( m_sdbSizer1, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

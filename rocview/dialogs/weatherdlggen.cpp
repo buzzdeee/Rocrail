@@ -29,7 +29,7 @@ WeatherDlgGen::WeatherDlgGen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_Outputs = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_Outputs->SetMinSize( wxSize( 160,-1 ) );
 	
-	fgSizer1->Add( m_Outputs, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_Outputs, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labMinBri = new wxStaticText( this, wxID_ANY, wxT("Min. brightness"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labMinBri->Wrap( -1 );
@@ -101,7 +101,7 @@ WeatherDlgGen::WeatherDlgGen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_StdButtonsHelp = new wxButton( this, wxID_HELP );
 	m_StdButtons->AddButton( m_StdButtonsHelp );
 	m_StdButtons->Realize();
-	bSizer1->Add( m_StdButtons, 0, wxALL|wxEXPAND|wxALIGN_RIGHT, 5 );
+	bSizer1->Add( m_StdButtons, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

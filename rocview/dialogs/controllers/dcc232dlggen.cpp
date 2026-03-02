@@ -50,7 +50,7 @@ dcc232gen::dcc232gen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer1->Add( m_labDevice, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Device = new wxComboBox( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0, NULL, 0 ); 
-	fgSizer1->Add( m_Device, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_Device, 0, wxALL|wxEXPAND, 5 );
 	
 	m_PortBox->Add( fgSizer1, 1, wxEXPAND, 5 );
 	
@@ -133,7 +133,7 @@ dcc232gen::dcc232gen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	m_DefaultButtonsHelp = new wxButton( this, wxID_HELP );
 	m_DefaultButtons->AddButton( m_DefaultButtonsHelp );
 	m_DefaultButtons->Realize();
-	bSizer1->Add( m_DefaultButtons, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer1->Add( m_DefaultButtons, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer1 );
 	this->Layout();

@@ -32,14 +32,14 @@ mgvdlggen::mgvdlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer3->Add( m_labIID, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_IID = new wxTextCtrl( m_Setup, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer3->Add( m_IID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer3->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labBus = new wxStaticText( m_Setup, wxID_ANY, wxT("Bus"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labBus->Wrap( -1 );
 	fgSizer3->Add( m_labBus, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Bus = new wxTextCtrl( m_Setup, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer3->Add( m_Bus, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer3->Add( m_Bus, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer7->Add( fgSizer3, 0, wxEXPAND, 5 );
 	
@@ -164,13 +164,13 @@ mgvdlggen::mgvdlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	fgSizer6->Add( m_labServoSpeed, 0, wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
 	
 	m_ServoLeftAng = new wxSlider( m_Servo, wxID_ANY, 50, 1, 100, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer6->Add( m_ServoLeftAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer6->Add( m_ServoLeftAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_ServoRightAng = new wxSlider( m_Servo, wxID_ANY, 50, 1, 100, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer6->Add( m_ServoRightAng, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer6->Add( m_ServoRightAng, 0, wxALL|wxEXPAND, 5 );
 	
 	m_ServoSpeed = new wxSlider( m_Servo, wxID_ANY, 1, 1, 4, wxDefaultPosition, wxDefaultSize, wxSL_AUTOTICKS|wxSL_INVERSE|wxSL_VERTICAL );
-	fgSizer6->Add( m_ServoSpeed, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer6->Add( m_ServoSpeed, 0, wxALL|wxEXPAND, 5 );
 	
 	m_SetLeftAngle = new wxButton( m_Servo, wxID_ANY, wxT("Set"), wxDefaultPosition, wxSize( 60,-1 ), 0 );
 	fgSizer6->Add( m_SetLeftAngle, 0, wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
@@ -204,7 +204,7 @@ mgvdlggen::mgvdlggen( wxWindow* parent, wxWindowID id, const wxString& title, co
 	m_StdButtonHelp = new wxButton( this, wxID_HELP );
 	m_StdButton->AddButton( m_StdButtonHelp );
 	m_StdButton->Realize();
-	bSizer6->Add( m_StdButton, 1, wxEXPAND|wxALL|wxALIGN_RIGHT, 5 );
+	bSizer6->Add( m_StdButton, 1, wxEXPAND|wxALL, 5 );
 	
 	this->SetSizer( bSizer6 );
 	this->Layout();

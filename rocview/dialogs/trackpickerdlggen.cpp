@@ -47,7 +47,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	
 	// Cell Defaults
 	m_GridTrack->SetDefaultCellAlignment( wxALIGN_CENTRE, wxALIGN_CENTRE );
-	bSizer2->Add( m_GridTrack, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer2->Add( m_GridTrack, 1, wxALL|wxEXPAND, 5 );
 	
 	m_PageTrack->SetSizer( bSizer2 );
 	m_PageTrack->Layout();
@@ -83,7 +83,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	
 	// Cell Defaults
 	m_GridSwitch->SetDefaultCellAlignment( wxALIGN_CENTRE, wxALIGN_CENTRE );
-	bSizer3->Add( m_GridSwitch, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer3->Add( m_GridSwitch, 1, wxALL|wxEXPAND, 5 );
 	
 	m_PageSwitch->SetSizer( bSizer3 );
 	m_PageSwitch->Layout();
@@ -119,7 +119,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	
 	// Cell Defaults
 	m_GridSignal->SetDefaultCellAlignment( wxALIGN_CENTRE, wxALIGN_CENTRE );
-	bSizer4->Add( m_GridSignal, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer4->Add( m_GridSignal, 1, wxALL|wxEXPAND, 5 );
 	
 	m_PageSignal->SetSizer( bSizer4 );
 	m_PageSignal->Layout();
@@ -155,7 +155,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	
 	// Cell Defaults
 	m_GridBlock->SetDefaultCellAlignment( wxALIGN_CENTRE, wxALIGN_CENTRE );
-	bSizer5->Add( m_GridBlock, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer5->Add( m_GridBlock, 1, wxALL|wxEXPAND, 5 );
 	
 	m_PageBlock->SetSizer( bSizer5 );
 	m_PageBlock->Layout();
@@ -191,7 +191,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	
 	// Cell Defaults
 	m_GridSensor->SetDefaultCellAlignment( wxALIGN_CENTRE, wxALIGN_CENTRE );
-	bSizer8->Add( m_GridSensor, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer8->Add( m_GridSensor, 1, wxALL|wxEXPAND, 5 );
 	
 	m_PageSensor->SetSizer( bSizer8 );
 	m_PageSensor->Layout();
@@ -227,7 +227,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	
 	// Cell Defaults
 	m_GridAccessory->SetDefaultCellAlignment( wxALIGN_CENTRE, wxALIGN_CENTRE );
-	bSizer6->Add( m_GridAccessory, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer6->Add( m_GridAccessory, 1, wxALL|wxEXPAND, 5 );
 	
 	m_PageAccessory->SetSizer( bSizer6 );
 	m_PageAccessory->Layout();
@@ -263,7 +263,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	
 	// Cell Defaults
 	m_GridRoad->SetDefaultCellAlignment( wxALIGN_CENTRE, wxALIGN_CENTRE );
-	bSizer7->Add( m_GridRoad, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	bSizer7->Add( m_GridRoad, 1, wxALL|wxEXPAND, 5 );
 	
 	m_PageRoad->SetSizer( bSizer7 );
 	m_PageRoad->Layout();
@@ -290,7 +290,7 @@ TrackPickerDlgGen::TrackPickerDlgGen( wxWindow* parent, wxWindowID id, const wxS
 	fgSizer1->Add( m_Help, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Tip = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-	fgSizer1->Add( m_Tip, 0, wxEXPAND|wxALIGN_CENTER_VERTICAL|wxTOP|wxBOTTOM|wxRIGHT, 5 );
+	fgSizer1->Add( m_Tip, 0, wxEXPAND|wxTOP|wxBOTTOM|wxRIGHT, 5 );
 	
 	bSizer1->Add( fgSizer1, 0, wxEXPAND, 5 );
 	

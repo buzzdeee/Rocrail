@@ -27,7 +27,7 @@ IssueDlgGen::IssueDlgGen( wxWindow* parent, wxWindowID id, const wxString& title
 	fgSizer1->Add( m_labSubject, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Subject = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Subject, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_Subject, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer1->Add( fgSizer1, 0, wxEXPAND, 5 );
 	

@@ -57,21 +57,21 @@ VariableDlgGen::VariableDlgGen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer1->Add( m_labID, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_ID = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_ID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer1->Add( m_ID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labGroup = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Group"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labGroup->Wrap( -1 );
 	fgSizer1->Add( m_labGroup, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Group = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Group, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer1->Add( m_Group, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labDesc = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Description"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labDesc->Wrap( -1 );
 	fgSizer1->Add( m_labDesc, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Desc = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer1->Add( m_Desc, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer1->Add( m_Desc, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer4->Add( fgSizer1, 0, wxEXPAND, 5 );
 	
@@ -100,7 +100,7 @@ VariableDlgGen::VariableDlgGen( wxWindow* parent, wxWindowID id, const wxString&
 	fgSizer2->Add( m_labText, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_Text = new wxTextCtrl( m_GeneralPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer2->Add( m_Text, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer2->Add( m_Text, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labValue = new wxStaticText( m_GeneralPanel, wxID_ANY, wxT("Value"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labValue->Wrap( -1 );

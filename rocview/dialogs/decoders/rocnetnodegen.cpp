@@ -81,10 +81,10 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_NodeTree = new wxTreeCtrl( m_RocNetPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxTR_DEFAULT_STYLE|wxTR_SINGLE );
 	bSizer16->Add( m_NodeTree, 1, wxALL|wxEXPAND, 5 );
 	
-	bSizer13->Add( bSizer16, 1, wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	bSizer13->Add( bSizer16, 1, wxEXPAND, 5 );
 	
 	m_staticline1 = new wxStaticLine( m_RocNetPanel, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLI_VERTICAL );
-	bSizer13->Add( m_staticline1, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	bSizer13->Add( m_staticline1, 0, wxALL|wxEXPAND, 5 );
 	
 	wxBoxSizer* bSizer14;
 	bSizer14 = new wxBoxSizer( wxVERTICAL );
@@ -100,7 +100,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	fgSizer5->Add( m_labIID, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_IID = new wxTextCtrl( m_RocNetPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer5->Add( m_IID, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer5->Add( m_IID, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labID = new wxStaticText( m_RocNetPanel, wxID_ANY, wxT("ID"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labID->Wrap( -1 );
@@ -121,7 +121,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	fgSizer5->Add( m_labVendor, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_VendorName = new wxTextCtrl( m_RocNetPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-	fgSizer5->Add( m_VendorName, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer5->Add( m_VendorName, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labProduct = new wxStaticText( m_RocNetPanel, wxID_ANY, wxT("Product"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labProduct->Wrap( -1 );
@@ -130,7 +130,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_ProductName = new wxTextCtrl( m_RocNetPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxTE_READONLY );
 	m_ProductName->SetMinSize( wxSize( 200,-1 ) );
 	
-	fgSizer5->Add( m_ProductName, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer5->Add( m_ProductName, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labIO = new wxStaticText( m_RocNetPanel, wxID_ANY, wxT("I/O"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labIO->Wrap( -1 );
@@ -159,7 +159,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	
 	m_Nickname = new wxTextCtrl( m_RocNetPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
 	m_Nickname->SetMaxLength( 60 ); 
-	fgSizer5->Add( m_Nickname, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer5->Add( m_Nickname, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer14->Add( fgSizer5, 1, wxEXPAND, 5 );
 	
@@ -274,28 +274,28 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	fgSizer7->Add( m_labI2CScan20, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_I2CScan20 = new wxTextCtrl( m_OptionsPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-	fgSizer7->Add( m_I2CScan20, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer7->Add( m_I2CScan20, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labI2CScan40 = new wxStaticText( m_OptionsPanel, wxID_ANY, wxT("GCA-Pi03"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labI2CScan40->Wrap( -1 );
 	fgSizer7->Add( m_labI2CScan40, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_I2CScan40 = new wxTextCtrl( m_OptionsPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-	fgSizer7->Add( m_I2CScan40, 0, wxALL|wxEXPAND|wxALIGN_CENTER_VERTICAL, 5 );
+	fgSizer7->Add( m_I2CScan40, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labI2CScan30 = new wxStaticText( m_OptionsPanel, wxID_ANY, wxT("GCA-Pi04"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labI2CScan30->Wrap( -1 );
 	fgSizer7->Add( m_labI2CScan30, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_I2CScan30 = new wxTextCtrl( m_OptionsPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxTE_READONLY );
-	fgSizer7->Add( m_I2CScan30, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer7->Add( m_I2CScan30, 0, wxALL|wxEXPAND, 5 );
 	
 	m_labI2CScan48 = new wxStaticText( m_OptionsPanel, wxID_ANY, wxT("GCA-Pi07"), wxDefaultPosition, wxDefaultSize, 0 );
 	m_labI2CScan48->Wrap( -1 );
 	fgSizer7->Add( m_labI2CScan48, 0, wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL, 5 );
 	
 	m_I2CScan48 = new wxTextCtrl( m_OptionsPanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
-	fgSizer7->Add( m_I2CScan48, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
+	fgSizer7->Add( m_I2CScan48, 0, wxALL|wxEXPAND, 5 );
 	
 	m_I2CScan->Add( fgSizer7, 1, wxEXPAND, 5 );
 	
@@ -655,7 +655,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_PortWrite = new wxButton( m_PortSetupPanel, wxID_ANY, wxT("Set"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer8->Add( m_PortWrite, 0, wxALL, 5 );
 	
-	bSizer7->Add( bSizer8, 0, wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer7->Add( bSizer8, 0, wxEXPAND, 5 );
 	
 	m_PortSetupPanel->SetSizer( bSizer7 );
 	m_PortSetupPanel->Layout();
@@ -1026,7 +1026,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_ChannelWrite = new wxButton( m_PWMSetupPanel, wxID_ANY, wxT("Set"), wxDefaultPosition, wxDefaultSize, 0 );
 	bSizer19->Add( m_ChannelWrite, 0, wxALL|wxALIGN_CENTER_VERTICAL, 5 );
 	
-	bSizer18->Add( bSizer19, 0, wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer18->Add( bSizer19, 0, wxEXPAND, 5 );
 	
 	wxBoxSizer* bSizer21;
 	bSizer21 = new wxBoxSizer( wxVERTICAL );
@@ -1142,7 +1142,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	fgSizer61->Add( m_labRevisionInfo, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxALIGN_RIGHT, 5 );
 	
 	m_RevisionInfo = new wxTextCtrl( m_UpdatePanel, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,60 ), wxTE_MULTILINE|wxTE_READONLY );
-	fgSizer61->Add( m_RevisionInfo, 0, wxALL|wxALIGN_CENTER_VERTICAL|wxEXPAND, 5 );
+	fgSizer61->Add( m_RevisionInfo, 0, wxALL|wxEXPAND, 5 );
 	
 	bSizer15->Add( fgSizer61, 0, wxEXPAND, 5 );
 	
@@ -1159,7 +1159,7 @@ rocnetnodegen::rocnetnodegen( wxWindow* parent, wxWindowID id, const wxString& t
 	m_StdButtonHelp = new wxButton( this, wxID_HELP );
 	m_StdButton->AddButton( m_StdButtonHelp );
 	m_StdButton->Realize();
-	bSizer5->Add( m_StdButton, 0, wxALL|wxALIGN_RIGHT|wxEXPAND, 5 );
+	bSizer5->Add( m_StdButton, 0, wxALL|wxEXPAND, 5 );
 	
 	this->SetSizer( bSizer5 );
 	this->Layout();
