@@ -524,7 +524,7 @@ static char* _createStampNoDotsID( RocsMemID id ) {
 }
 
 
-static char* _isoDate( long tt ) {
+static char* _isoDate( time_t tt ) {
   struct tm* t  = NULL;
 
   /* Alloc a string for the stamp; caller should freeup! */
@@ -540,7 +540,7 @@ static char* _isoDate( long tt ) {
   return s;
 }
 
-static char* _isoTime( long tt ) {
+static char* _isoTime( time_t tt ) {
   struct tm* t  = NULL;
 
   /* Alloc a string for the stamp; caller should freeup! */

@@ -1335,7 +1335,7 @@ static iONode __translate( iOBiDiB inst, iONode node ) {
 
     if(  StrOp.equals( wClock.getcmd( node ), wClock.set ) || StrOp.equals( wClock.getcmd( node ), wClock.sync ) ) {
       int div   = wClock.getdivider(node);
-      long l_time = wClock.gettime(node);
+      time_t l_time = wClock.gettime(node);
       struct tm* lTime = localtime( &l_time );
 
       int mins  = lTime->tm_min;

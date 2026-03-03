@@ -23,6 +23,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "rocrail/impl/loc_impl.h"
 #include "rocrail/public/block.h"

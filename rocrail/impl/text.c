@@ -205,7 +205,7 @@ static char* __addActionProperties(iOMap map, iONode node) {
 
   /* Get time from Control */
   if( AppOp.getControl() != NULL ) {
-    long l_time = ControlOp.getTime( AppOp.getControl() );
+    time_t l_time = ControlOp.getTime( AppOp.getControl() );
     struct tm* ltm = localtime( &l_time );
     NodeOp.setInt(node, "hour", ltm->tm_hour);
     NodeOp.setInt(node, "min", ltm->tm_min);

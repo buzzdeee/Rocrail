@@ -134,7 +134,7 @@ static iONode _cmd( obj inst ,const iONode cmd ) {
     iONode clockcmd = NodeOp.inst( wBinCmd.name(), NULL, ELEMENT_NODE );
     char* byteStr = NULL;
     byte outBytes[6];
-    long l_time = wClock.gettime(cmd);
+    time_t l_time = wClock.gettime(cmd);
     struct tm* lTime = localtime( &l_time );
 
     int mins    = lTime->tm_min;

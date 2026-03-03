@@ -250,7 +250,7 @@ void opendccTranslate( obj xpressnet, void* node ) {
     When no Parameters are given, it is a query and the answer will be sent only to the requesting slave.
      */
     if( data->fastclock && StrOp.equals( wClock.set, wClock.getcmd( node ) ) ) {
-      long l_time = wClock.gettime(node);
+      time_t l_time = wClock.gettime(node);
       struct tm* lTime = localtime( &l_time );
 
       int mins    = lTime->tm_min;

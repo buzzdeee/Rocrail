@@ -84,6 +84,8 @@ For the Analyzer to work the Plan has to fullfill:
 - only one item at one position
  */
 
+#include <ctype.h>
+
 #include "rocrail/impl/analyse_impl.h"
 
 #include "rocs/public/mem.h"

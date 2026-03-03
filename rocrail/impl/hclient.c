@@ -177,7 +177,7 @@ static void __scan4Html( iOHClient inst ) {
       if( StrOp.endsWithi( fileName, ".html" ) || StrOp.endsWithi( fileName, ".htm" ) ) {
         char* path = StrOp.fmt( "%s%c%s", data->path, SystemOp.getFileSeparator(), fileName );
         long size  = FileOp.fileSize( path );
-        long ftime = FileOp.fileTime( path );
+        time_t ftime = FileOp.fileTime( path );
         StrOp.replaceAll( path, '\\', '/' );
         SocketOp.fmt( data->socket, "<tr><td><a href=\"%s\">%s</a></td><td align=\"right\">%ld</td><td align=\"right\">%s</td></tr>\n",
                       path, path, size, ctime(&ftime) );
@@ -229,7 +229,7 @@ static void __scan4Trc( iOHClient inst ) {
         char* realpath = StrOp.fmt( "%s%c%s", tracepath, SystemOp.getFileSeparator(), fileName );
         char* path = StrOp.fmt( "%s%s%c%s", absolute?sep:"", tracepath, SystemOp.getFileSeparator(), fileName );
         long size  = FileOp.fileSize( realpath );
-        long ftime = FileOp.fileTime( realpath );
+        time_t ftime = FileOp.fileTime( realpath );
         StrOp.replaceAll( path, '\\', '/' );
         SocketOp.fmt( data->socket, "<tr><td><a type=\"text/plain\" href=\"%s\">%s</a></td><td align=\"right\">%ld</td><td align=\"right\">%s</td></tr>\n",
                       path, path, size, ctime(&ftime) );
@@ -270,7 +270,7 @@ static void __getHome( iOHClient inst ) {
     SocketOp.fmt( data->socket, "<table border=\"1\" cellpadding=\"4\" cellspacing= \"0\">\n" );
     SocketOp.fmt( data->socket, "<tr><td>process id       </td><td>%d    </td></tr>\n", SystemOp.getpid() );
     {
-      long t = AppOp.getStartTime();
+      time_t t = AppOp.getStartTime();
       SocketOp.fmt( data->socket, "<tr><td>started at</td><td>%s</td></tr>\n", ctime( &t ) );
     }
 

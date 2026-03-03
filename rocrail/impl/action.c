@@ -1653,7 +1653,7 @@ static void _exec( struct OAction* inst, iONode actionctrl ) {
 static void _tick( iOAction inst, int seconds ) {
   iOActionData data = Data(inst);
   iOControl control = AppOp.getControl();
-  long l_time = ControlOp.getTime(control);
+  time_t l_time = ControlOp.getTime(control);
   struct tm* lTime = localtime( &l_time );
 
   data->ticker += seconds; /* scale seconds */

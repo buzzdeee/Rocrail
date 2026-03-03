@@ -183,7 +183,7 @@ static void __makeWeather( void* threadinst ) {
   while( data->run ) {
     if( loopCnt >= 10 ) {
       loopCnt = 0;
-      long t = ControlOp.getTime(control);
+      time_t t = ControlOp.getTime(control);
       struct tm* ltm = localtime( &t );
       int hour = ltm->tm_hour;
       int min  = ltm->tm_min;

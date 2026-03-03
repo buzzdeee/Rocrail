@@ -484,7 +484,7 @@ static void __handleIssue(obj inst, iONode node) {
       StrOp.free(tmp);
 
       {
-        long t = AppOp.getStartTime();
+        time_t t = AppOp.getStartTime();
         FileOp.fmt( f, "started at %s\n", ctime( &t ) );
       }
 

@@ -212,7 +212,7 @@ static iONode __translate( iOrocNet inst, iONode node ) {
   /* Clock command. */
   else if( StrOp.equals( NodeOp.getName( node ), wClock.name() ) ) {
     const char* cmd = wClock.getcmd( node );
-    long l_time = wClock.gettime(node);
+    time_t l_time = wClock.gettime(node);
     struct tm* lTime = localtime( &l_time );
 
     int mins  = lTime->tm_min;

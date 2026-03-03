@@ -1746,7 +1746,7 @@ static int __setFastClock(iOLocoNet loconet, iONode node, byte* cmd) {
       int hours = 10;
       int mins = 30;
 
-      long l_time = wClock.gettime(node);
+      time_t l_time = wClock.gettime(node);
       struct tm* lTime = localtime( &l_time );
 
       mins  = lTime->tm_min;

@@ -53,7 +53,7 @@ static Boolean isHourlyInRange(iILcDriverInt inst, iONode schedule) {
   int     hours    = 0;
   int     mins     = 0;
 
-  long modeltime = data->model->getTime( data->model );
+  time_t modeltime = data->model->getTime( data->model );
   struct tm* ltm;
 
   ltm = localtime( &modeltime );
@@ -223,7 +223,7 @@ Boolean checkScheduleTime( iILcDriverInt inst, const char* scheduleID, int sched
     /* check if the schedule index is correct: */
     while( entry != NULL ) {
       if( idx == scheduleIdx ) {
-        long modeltime = data->model->getTime( data->model );
+        time_t modeltime = data->model->getTime( data->model );
         struct tm* ltm;
         int modelminutes    = 0;
         int scheduleminutes = 0;

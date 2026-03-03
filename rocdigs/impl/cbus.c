@@ -1827,7 +1827,7 @@ static void __setFastClock(iOCBUS cbus, iONode node) {
   int div   = wClock.getdivider(node);
   char temp = wClock.gettemp(node);
 
-  long l_time = wClock.gettime(node);
+  time_t l_time = wClock.gettime(node);
   struct tm* lTime = localtime( &l_time );
 
   mins  = lTime->tm_min;
