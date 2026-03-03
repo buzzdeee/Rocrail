@@ -415,7 +415,7 @@ void JsSupport::OnJsEvent(wxCommandEvent& event) {
 
           if( m_LocDialog[device] != NULL )
             m_LocDialog[device]->SelectPrev();
-          else if( m_Selected != NULL ) {
+          else if( m_Selected[device] != NULL ) {
             if( V < V_max )
               V += step;
             if( V > V_max )
