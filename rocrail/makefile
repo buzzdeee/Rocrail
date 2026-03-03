@@ -124,7 +124,7 @@ $(OUTDIR)$(FS)librocrail.a: $(LIBOBJS)
 # The wrapper archive.
 # ------------------------------------------------------------
 $(OUTDIR)$(FS)libwrapper.a: $(WOBJS) $(OUTDIR)$(FS)librocs.a
-	$(TOOLPREFIX)ar rcs $(OUTDIR)$(FS)libwrapper.a $(WOBJS) $(OUTDIR)$(FS)librocs.a
+	$(TOOLPREFIX)ar rcs $(OUTDIR)$(FS)libwrapper.a $(WOBJS)
 
 # ------------------------------------------------------------
 # The RocRail objects.
