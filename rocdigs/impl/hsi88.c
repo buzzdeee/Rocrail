@@ -164,7 +164,7 @@ static int __getRC(iOHSI88Data o) {
 /* Check if CTS is set. Retry configured times */
 static Boolean CheckCTS( iOHSI88Data o ) {
   int wait4cts = 0;
-  if( o->flow == none ) {
+  if( o->flow == flow_none ) {
     return True;
   }
   if( o->usb ) {
