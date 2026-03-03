@@ -315,7 +315,7 @@
       <var name="step" vt="int" defval="1" range="1-9" remark="speed step per click"/>
     </jsmap>
     <clock wrappername="Clock" cardinality="1" remark="clock synchronizer.">
-      <var name="time" vt="long" defval="0" range="*" remark="time in seconds"/>
+      <var name="time" vt="time_t" defval="0" range="*" remark="time in seconds"/>
       <var name="divider" vt="int" defval="1" range="1-100" remark="time devider: 1 = realtime"/>
       <var name="update" vt="int" defval="1" range="1-60" remark="update frequency in minutes"/>
       <var name="hour" vt="int" defval="24" range="0-24" remark="start hour; 24 not used"/>
@@ -1613,10 +1613,10 @@
         <var name="scopt_repoweron" vt="bool" defval="false" remark="Repower on incase the shortcut is cleared."/>
         <actionctrl cardinality="n"/>
         <boosterevent cardinality="n" wrappername="BoosterEvent">
-          <var name="timestamp" vt="long" defval="0"/>
-	        <var name="load" vt="int" defval="0" units="mA" range="0-*"/>
-	        <var name="volt" vt="int" defval="0" units="mV" range="0-*"/>
-	        <var name="temp" vt="int" defval="0" units="C" range="0-*"/>
+          <var name="timestamp" vt="time_t" defval="0"/>
+	  <var name="load" vt="int" defval="0" units="mA" range="0-*"/>
+	  <var name="volt" vt="int" defval="0" units="mV" range="0-*"/>
+	  <var name="temp" vt="int" defval="0" units="C" range="0-*"/>
         </boosterevent>
       </booster>
     </boosterlist>
@@ -1684,7 +1684,7 @@
         <var name="cmd_lcid" vt="const char*" defval="NULL"/>
         
         <var name="delay" vt="int" defval="0" range="0-*" required="false" remark="overwrites control.swtimeout if greater then 0"/>
-        <var name="delaytime" vt="long" defval="0" range="0-*" required="false" remark="Delay timer for internal use only."/>
+        <var name="delaytime" vt="time_t" defval="0" range="0-*" required="false" remark="Delay timer for internal use only."/>
         <var name="actdelay" vt="bool" defval="false" remark="if false: delay is programmed in central unit or module"/>
         <var name="syncdelay" vt="bool" defval="false" remark="Delay until is ready."/>
         <var name="x" vt="int" defval="0" range="0-*" remark="X-Position in the plan."/>
@@ -2750,8 +2750,8 @@
         <var name="lclib" vt="string" defval="./lcdriver" remark="LocDriver library"/>
         <var name="ttlib" vt="string" defval="./ttdriver" remark="TurntableDriver library"/>
         <var name="purchased" vt="string" defval="" remark="Date of purchase"/>
-        <var name="runtime" vt="long" defval="0" remark="Auto runtime in seconds"/>
-        <var name="mtime" vt="long" defval="0" remark="last maintenance in seconds"/>
+        <var name="runtime" vt="time_t" defval="0" remark="Auto runtime in seconds"/>
+        <var name="mtime" vt="time_t" defval="0" remark="last maintenance in seconds"/>
         <var name="mint" vt="int" defval="0" remark="maintenance interval in hours"/>
         <var name="evttimer" vt="int" defval="0" range="0-*" unit="ms" remark="event timer; loc should wait this time before processing the event"/>
         <var name="ent2incorr" vt="int" defval="100" range="1-*" unit="%" remark="Correction percentage for enter2in block timer"/>

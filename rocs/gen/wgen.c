@@ -262,7 +262,7 @@ static int __processPrefix( iOFile fHdr, iOFile fImpl, iOFile fDoc, iOFile fInde
 
   TraceOp.println( "Processing Prefix B" );
   FileOp.fmt( fHdr, "\n" );
-  FileOp.fmt( fHdr, "typedef enum {vt_bool,vt_int,vt_long,vt_float,vt_string} attr_vt;\n" );
+  FileOp.fmt( fHdr, "typedef enum {vt_bool,vt_int,vt_long,vt_float,vt_string,vt_time} attr_vt;\n" );
   FileOp.fmt( fHdr, "struct __attrdef {\n" );
   FileOp.fmt( fHdr, "  char*   name;\n" );
   FileOp.fmt( fHdr, "  char*   remark;\n" );
@@ -284,6 +284,7 @@ static int __processPrefix( iOFile fHdr, iOFile fImpl, iOFile fDoc, iOFile fInde
   FileOp.fmt( fHdr, "Boolean xBool( struct __attrdef attr); \n" );
   FileOp.fmt( fHdr, "int xInt( struct __attrdef attr); \n" );
   FileOp.fmt( fHdr, "long xLong( struct __attrdef attr); \n" );
+  FileOp.fmt( fHdr, "time_t xTime( struct __attrdef attr); \n" );
   FileOp.fmt( fHdr, "double xFloat( struct __attrdef attr); \n" );
   FileOp.fmt( fHdr, "const char* xStr( struct __attrdef attr); \n" );
   FileOp.fmt( fHdr, "Boolean xNode( struct __nodedef attr, iONode node); \n" );
@@ -319,6 +320,11 @@ static int __processPrefix( iOFile fHdr, iOFile fImpl, iOFile fDoc, iOFile fInde
   FileOp.fmt( fImpl, "  if( attr.defval == NULL )\n" );
   FileOp.fmt( fImpl, "    return 0;\n" );
   FileOp.fmt( fImpl, "  return atol( attr.defval );\n" );
+  FileOp.fmt( fImpl, "} \n" );
+  FileOp.fmt( fImpl, "time_t xTime( struct __attrdef attr) {\n" );
+  FileOp.fmt( fImpl, "  if( attr.defval == NULL )\n" );
+  FileOp.fmt( fImpl, "    return 0;\n" );
+  FileOp.fmt( fImpl, "  return (time_t)atoll( attr.defval );\n" ); // Use atoll for 64-bit safety
   FileOp.fmt( fImpl, "} \n" );
   FileOp.fmt( fImpl, "double xFloat( struct __attrdef attr) {\n" );
   FileOp.fmt( fImpl, "  if( attr.defval == NULL )\n" );
@@ -485,7 +491,7 @@ static void __addIdent( iOFile f, int level ) {
   }
 }
 
-typedef enum {vt_bool,vt_int,vt_long,vt_float,vt_string} attr_vt;
+typedef enum {vt_bool,vt_int,vt_long,vt_float,vt_string,vt_time} attr_vt;
 static int __getVarType( const char* vtype ) {
   if( StrOp.equals( "bool", vtype ) )
     return vt_bool;
@@ -495,6 +501,8 @@ static int __getVarType( const char* vtype ) {
     return vt_long;
   else if( StrOp.equals( "float", vtype ) )
     return vt_float;
+  else if( StrOp.equals( "time_t", vtype ) )
+    return vt_time;
   else
     return vt_string;
 }
@@ -600,7 +608,11 @@ static Boolean __evalType( iONode var, char** vt, char** vtNode, char** prefix )
     *vtNode = "Bool";
     *prefix = "is";
   }
-
+  else if( StrOp.equalsi( "time_t", NodeOp.getStr( var, "vt", "string" ) ) ) {
+    // Mapping to time_t and using the LongLong/I64 node interface
+    *vt = "time_t";
+    *vtNode = "Long"; // Or "I64" if your NodeOp supports it
+  }
   return NodeOp.getBool( var, "readonly", False );;
 }
 

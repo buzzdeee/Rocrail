@@ -949,7 +949,7 @@
 
   <object name="Serial" remark="Serial communication.">
     <typedef def="enum {none=0,even=1,odd=2} serial_parity"/>
-    <typedef def="enum {cts=1,dsr=2,xon=3} serial_flow"/>
+    <typedef def="enum {flow_none=0,cts=1,dsr=2,xon=3} serial_flow"/>
     <typedef def="enum {onestopbit=1,twostopbits=2} serial_stopbits"/>
     <typedef def="enum {eight=8,seven=7} serial_databits"/>
     <typedef def="enum {undefined=0,mm=1,dcc=2,mma=3} serial_mode"/>
@@ -1336,10 +1336,10 @@
     <fun name="createStamp" vt="char*" static="true" remark="Creates a timestamp: YYYYmmdd.hhMMss.SSS."/>
     <fun name="createStampNoDots" vt="char*" static="true" remark="Creates a timestamp: YYYYmmddhhMMssSSS."/>
     <fun name="isoDate" vt="char*" static="true" remark="Creates an ISO date string: YYYY-mm-dd">
-      <param name="tt" vt="long" remark=""/>
+      <param name="tt" vt="time_t" remark=""/>
     </fun>
     <fun name="isoTime" vt="char*" static="true" remark="Creates an ISO time string: hh:MM:ss">
-      <param name="tt" vt="long" remark=""/>
+      <param name="tt" vt="time_t" remark=""/>
     </fun>
     <fun name="fmtb" vt="char*" static="true" remark="Formats a string into a buffer.">
       <param name="buffer" vt="char*" remark="Buffer."/>

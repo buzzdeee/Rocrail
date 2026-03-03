@@ -169,7 +169,7 @@
       <var name="mvTime" vt="long"/>
       <var name="mvspeed" vt="float"/>
       <var name="manager" vt="iIBlockBase"/>
-      <var name="occtime" vt="long"/>
+      <var name="occtime" vt="time_t"/>
       <var name="ghost" vt="Boolean"/>
       <var name="acceptident" vt="Boolean"/>
       <var name="wheelcount" vt="int"/>
@@ -381,7 +381,7 @@
       <var name="clockticker" vt="iOThread"/>
       <var name="txshortids" vt="iOThread"/>
       <var name="devider" vt="int"/>
-      <var name="time" vt="long"/>
+      <var name="time" vt="time_t"/>
       <var name="timeset" vt="Boolean"/>
       <var name="clockrun" vt="Boolean"/>
       <var name="temp" vt="int"/>
@@ -829,7 +829,7 @@
       <var name="outTick" vt="int"/>
       <var name="gomanual" vt="Boolean"/>
       <var name="manual" vt="Boolean"/>
-      <var name="runtime" vt="long"/>
+      <var name="runtime" vt="time_t"/>
       <var name="secondnextblock" vt="Boolean"/>
       <var name="usemanualroutes" vt="Boolean"/>
       <var name="infocheck" vt="int"/>
@@ -2725,7 +2725,7 @@
       <var name="pause" vt="Boolean"/>
       <var name="player" vt="iOThread"/>
       <var name="run" vt="Boolean"/>
-      <var name="prevtime" vt="long"/>
+      <var name="prevtime" vt="time_t"/>
       <var name="callback" vt="obj"/>
       <var name="stamp" vt="Boolean"/>
     </data>

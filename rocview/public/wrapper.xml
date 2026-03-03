@@ -110,7 +110,7 @@
     <var name="dirimagerev" vt="string" defval="" remark="image to use for the direction button"/>
     <var name="updatespath" vt="string" defval="updates" remark="download updates in this path"/>
     <var name="updatesserver" vt="string" defval="rocrail.net" remark="location of updates"/>
-    <var name="updatestimestamp" vt="long" defval="0" remark="timestamp of last viewed updates xml for the update notifier; this number increases after adding items on the server"/>
+    <var name="updatestimestamp" vt="time_t" defval="0" remark="timestamp of last viewed updates xml for the update notifier; this number increases after adding items on the server"/>
     <var name="checkupdates" vt="bool" defval="false"/>
     <var name="tabalign" vt="int" defval="0" range="0-2" remark="0 default, 1 left, 2 multiline"/>
     <var name="restrictedit4auto" vt="bool" defval="true"/>
@@ -297,7 +297,7 @@
   <release wrappername="Release">
     <var name="version" vt="string" defval="1.0"/>
     <var name="alias" vt="string" defval="Harvest"/>
-    <var name="timestamp" vt="long" defval="0"/>
+    <var name="timestamp" vt="time_t" defval="0"/>
     <var name="remark" vt="string" defval=""/>
     <patch cardinality="n" wrappername="Patch">
       <var name="file" vt="string" defval=""/>
