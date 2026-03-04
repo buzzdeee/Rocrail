@@ -2,8 +2,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Exec=/opt/rocrail/rocview.sh %f
-Icon=/opt/rocrail/rocrail.xpm
+Exec=/usr/local/bin/rocview.sh %f
+Icon=rocrail
 Name=Rocview
 Categories=Rocrail;
 MimeType=application/xml;

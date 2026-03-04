@@ -4,30 +4,26 @@ if [ ! -e ~/rocrail ] ; then
 fi
 
 if [ ! -e ~/rocrail/plan.xml ] ; then
-	cp /opt/rocrail/default/plan.xml ~/rocrail
+	cp /usr/local/share/rocrail/default/plan.xml ~/rocrail
 fi
 
 if [ ! -e ~/rocrail/svg ] ; then
-	ln -s /opt/rocrail/svg ~/rocrail/svg
+	ln -s /usr/local/share/rocrail/svg ~/rocrail/svg
 fi
 
 if [ ! -e ~/rocrail/images ] ; then
-  mkdir ~/rocrail/images
+	ln -s /usr/local/share/rocrail/images ~/rocrail/images
 fi
-cp -pur /opt/rocrail/images ~/rocrail
 
 if [ ! -e ~/rocrail/decspecs ] ; then
-  mkdir ~/rocrail/decspecs
+	ln -s /usr/local/share/rocrail/decspecs ~/rocrail/decspecs
 fi
-cp -pur /opt/rocrail/decspecs ~/rocrail
 
 if [ ! -e ~/rocrail/stylesheets ] ; then
-  mkdir ~/rocrail/stylesheets
+	ln -s /usr/local/share/rocrail/stylesheets ~/rocrail/stylesheets
 fi
-cp -pur /opt/rocrail/stylesheets ~/rocrail
-
 
 cd ~/rocrail
 
-/opt/rocrail/rocview -sp /opt/rocrail $*
+/usr/local/bin/rocview -sp /var/rocrail -themespath /usr/local/share/rocrail $@
 

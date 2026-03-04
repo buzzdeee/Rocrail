@@ -92,7 +92,7 @@ OUTDIR=..$(FS)$(DIRPREFIX)bin
 GENDIR=..$(FS)$(DIRPREFIX)gen
 TMPOUTDIR=$(GENDIR)$(FS)rocrail$(FS)bin
 DEBUG=-g
-DESTDIR=$(FS)opt$(FS)rocrail
+DESTDIR ?= $(FS)opt$(FS)rocrail
 BINDIR=..$(FS)rocs$(FS)bin
 
 CPP=$(TOOLPREFIX)gcc
