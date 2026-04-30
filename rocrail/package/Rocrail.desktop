@@ -3,7 +3,7 @@
 Encoding=UTF-8
 Type=Application
 Terminal=false
-Exec=/opt/rocrail/rocrail.sh
-Icon=/opt/rocrail/rocraild.png
+Exec=/usr/local/bin/rocrail
+Icon=/usr/local/share/rocrail/rocraild.png
 Name=Rocrail
 Categories=Rocrail;
